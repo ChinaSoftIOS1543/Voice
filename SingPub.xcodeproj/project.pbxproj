@@ -163,17 +163,6 @@
 		B87DBE8F1BE861BA004D9899 /* titlebar_back_nonal.png in Resources */ = {isa = PBXBuildFile; fileRef = B87DBE731BE861BA004D9899 /* titlebar_back_nonal.png */; };
 		B87DBE901BE861BA004D9899 /* titlebar_close.png in Resources */ = {isa = PBXBuildFile; fileRef = B87DBE741BE861BA004D9899 /* titlebar_close.png */; };
 		C80324451BF330A500BC432E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CF66111BE8480B005CC073 /* Images.xcassets */; };
-		C80324631BF331C600BC432E /* SecBangController.m in Sources */ = {isa = PBXBuildFile; fileRef = C803244D1BF331C600BC432E /* SecBangController.m */; };
-		C80324641BF331C600BC432E /* SecCaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C803244F1BF331C600BC432E /* SecCaiViewController.m */; };
-		C80324651BF331C600BC432E /* SecDongTingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324511BF331C600BC432E /* SecDongTingViewController.m */; };
-		C80324661BF331C600BC432E /* SecGeDanController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324531BF331C600BC432E /* SecGeDanController.m */; };
-		C80324671BF331C600BC432E /* ZongBangController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324551BF331C600BC432E /* ZongBangController.m */; };
-		C80324681BF331C600BC432E /* CustomPeopleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324581BF331C600BC432E /* CustomPeopleImage.m */; };
-		C80324691BF331C600BC432E /* DongTingCusotomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C803245A1BF331C600BC432E /* DongTingCusotomCell.m */; };
-		C803246A1BF331C600BC432E /* SecCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C803245C1BF331C600BC432E /* SecCustomCell.m */; };
-		C803246B1BF331C600BC432E /* SecCustomImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = C803245E1BF331C600BC432E /* SecCustomImageData.m */; };
-		C803246C1BF331C600BC432E /* SecCustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324601BF331C600BC432E /* SecCustomImageView.m */; };
-		C803246D1BF331C600BC432E /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324621BF331C600BC432E /* ShowViewController.m */; };
 		C803246F1BF3324B00BC432E /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = C803246E1BF3324B00BC432E /* citydict.plist */; };
 		C80324791BF3330A00BC432E /* cainixihuan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C80324711BF3330A00BC432E /* cainixihuan@2x.png */; };
 		C803247A1BF3330A00BC432E /* dongtingdanqv@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C80324721BF3330A00BC432E /* dongtingdanqv@2x.png */; };
@@ -183,6 +172,17 @@
 		C803247E1BF3330A00BC432E /* quanguobang@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C80324761BF3330A00BC432E /* quanguobang@2x.png */; };
 		C803247F1BF3330A00BC432E /* youzhiMV@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C80324771BF3330A00BC432E /* youzhiMV@2x.png */; };
 		C80324801BF3330A00BC432E /* zongbang@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C80324781BF3330A00BC432E /* zongbang@2x.png */; };
+		C803249E1BF33DCF00BC432E /* SecBangController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324881BF33DCF00BC432E /* SecBangController.m */; };
+		C803249F1BF33DCF00BC432E /* SecCaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C803248A1BF33DCF00BC432E /* SecCaiViewController.m */; };
+		C80324A01BF33DCF00BC432E /* SecDongTingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C803248C1BF33DCF00BC432E /* SecDongTingViewController.m */; };
+		C80324A11BF33DCF00BC432E /* SecGeDanController.m in Sources */ = {isa = PBXBuildFile; fileRef = C803248E1BF33DCF00BC432E /* SecGeDanController.m */; };
+		C80324A21BF33DCF00BC432E /* ZongBangController.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324901BF33DCF00BC432E /* ZongBangController.m */; };
+		C80324A31BF33DCF00BC432E /* CustomPeopleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324931BF33DCF00BC432E /* CustomPeopleImage.m */; };
+		C80324A41BF33DCF00BC432E /* DongTingCusotomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324951BF33DCF00BC432E /* DongTingCusotomCell.m */; };
+		C80324A51BF33DCF00BC432E /* SecCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324971BF33DCF00BC432E /* SecCustomCell.m */; };
+		C80324A61BF33DCF00BC432E /* SecCustomImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324991BF33DCF00BC432E /* SecCustomImageData.m */; };
+		C80324A71BF33DCF00BC432E /* SecCustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C803249B1BF33DCF00BC432E /* SecCustomImageView.m */; };
+		C80324A81BF33DCF00BC432E /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C803249D1BF33DCF00BC432E /* ShowViewController.m */; };
 		F886D7081BE8917500BA388A /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D7051BE8917500BA388A /* NavigationController.m */; };
 		F886D7091BE8917500BA388A /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D7071BE8917500BA388A /* TabBarController.m */; };
 		F886D70D1BE8988200BA388A /* FourthMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D70C1BE8988200BA388A /* FourthMessageCell.m */; };
@@ -409,28 +409,6 @@
 		B87DBE721BE861BA004D9899 /* offline_colloction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offline_colloction.png; sourceTree = "<group>"; };
 		B87DBE731BE861BA004D9899 /* titlebar_back_nonal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlebar_back_nonal.png; sourceTree = "<group>"; };
 		B87DBE741BE861BA004D9899 /* titlebar_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = titlebar_close.png; sourceTree = "<group>"; };
-		C803244C1BF331C600BC432E /* SecBangController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecBangController.h; sourceTree = "<group>"; };
-		C803244D1BF331C600BC432E /* SecBangController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecBangController.m; sourceTree = "<group>"; };
-		C803244E1BF331C600BC432E /* SecCaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecCaiViewController.h; sourceTree = "<group>"; };
-		C803244F1BF331C600BC432E /* SecCaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCaiViewController.m; sourceTree = "<group>"; };
-		C80324501BF331C600BC432E /* SecDongTingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecDongTingViewController.h; sourceTree = "<group>"; };
-		C80324511BF331C600BC432E /* SecDongTingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecDongTingViewController.m; sourceTree = "<group>"; };
-		C80324521BF331C600BC432E /* SecGeDanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecGeDanController.h; sourceTree = "<group>"; };
-		C80324531BF331C600BC432E /* SecGeDanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecGeDanController.m; sourceTree = "<group>"; };
-		C80324541BF331C600BC432E /* ZongBangController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZongBangController.h; sourceTree = "<group>"; };
-		C80324551BF331C600BC432E /* ZongBangController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZongBangController.m; sourceTree = "<group>"; };
-		C80324571BF331C600BC432E /* CustomPeopleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPeopleImage.h; sourceTree = "<group>"; };
-		C80324581BF331C600BC432E /* CustomPeopleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPeopleImage.m; sourceTree = "<group>"; };
-		C80324591BF331C600BC432E /* DongTingCusotomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DongTingCusotomCell.h; sourceTree = "<group>"; };
-		C803245A1BF331C600BC432E /* DongTingCusotomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DongTingCusotomCell.m; sourceTree = "<group>"; };
-		C803245B1BF331C600BC432E /* SecCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecCustomCell.h; sourceTree = "<group>"; };
-		C803245C1BF331C600BC432E /* SecCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCustomCell.m; sourceTree = "<group>"; };
-		C803245D1BF331C600BC432E /* SecCustomImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecCustomImageData.h; sourceTree = "<group>"; };
-		C803245E1BF331C600BC432E /* SecCustomImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCustomImageData.m; sourceTree = "<group>"; };
-		C803245F1BF331C600BC432E /* SecCustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecCustomImageView.h; sourceTree = "<group>"; };
-		C80324601BF331C600BC432E /* SecCustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCustomImageView.m; sourceTree = "<group>"; };
-		C80324611BF331C600BC432E /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
-		C80324621BF331C600BC432E /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
 		C803246E1BF3324B00BC432E /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
 		C80324711BF3330A00BC432E /* cainixihuan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cainixihuan@2x.png"; sourceTree = "<group>"; };
 		C80324721BF3330A00BC432E /* dongtingdanqv@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dongtingdanqv@2x.png"; sourceTree = "<group>"; };
@@ -440,6 +418,28 @@
 		C80324761BF3330A00BC432E /* quanguobang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quanguobang@2x.png"; sourceTree = "<group>"; };
 		C80324771BF3330A00BC432E /* youzhiMV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "youzhiMV@2x.png"; sourceTree = "<group>"; };
 		C80324781BF3330A00BC432E /* zongbang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zongbang@2x.png"; sourceTree = "<group>"; };
+		C80324871BF33DCF00BC432E /* SecBangController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecBangController.h; sourceTree = "<group>"; };
+		C80324881BF33DCF00BC432E /* SecBangController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecBangController.m; sourceTree = "<group>"; };
+		C80324891BF33DCF00BC432E /* SecCaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecCaiViewController.h; sourceTree = "<group>"; };
+		C803248A1BF33DCF00BC432E /* SecCaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCaiViewController.m; sourceTree = "<group>"; };
+		C803248B1BF33DCF00BC432E /* SecDongTingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecDongTingViewController.h; sourceTree = "<group>"; };
+		C803248C1BF33DCF00BC432E /* SecDongTingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecDongTingViewController.m; sourceTree = "<group>"; };
+		C803248D1BF33DCF00BC432E /* SecGeDanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecGeDanController.h; sourceTree = "<group>"; };
+		C803248E1BF33DCF00BC432E /* SecGeDanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecGeDanController.m; sourceTree = "<group>"; };
+		C803248F1BF33DCF00BC432E /* ZongBangController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZongBangController.h; sourceTree = "<group>"; };
+		C80324901BF33DCF00BC432E /* ZongBangController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZongBangController.m; sourceTree = "<group>"; };
+		C80324921BF33DCF00BC432E /* CustomPeopleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPeopleImage.h; sourceTree = "<group>"; };
+		C80324931BF33DCF00BC432E /* CustomPeopleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPeopleImage.m; sourceTree = "<group>"; };
+		C80324941BF33DCF00BC432E /* DongTingCusotomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DongTingCusotomCell.h; sourceTree = "<group>"; };
+		C80324951BF33DCF00BC432E /* DongTingCusotomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DongTingCusotomCell.m; sourceTree = "<group>"; };
+		C80324961BF33DCF00BC432E /* SecCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecCustomCell.h; sourceTree = "<group>"; };
+		C80324971BF33DCF00BC432E /* SecCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCustomCell.m; sourceTree = "<group>"; };
+		C80324981BF33DCF00BC432E /* SecCustomImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecCustomImageData.h; sourceTree = "<group>"; };
+		C80324991BF33DCF00BC432E /* SecCustomImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCustomImageData.m; sourceTree = "<group>"; };
+		C803249A1BF33DCF00BC432E /* SecCustomImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecCustomImageView.h; sourceTree = "<group>"; };
+		C803249B1BF33DCF00BC432E /* SecCustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCustomImageView.m; sourceTree = "<group>"; };
+		C803249C1BF33DCF00BC432E /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
+		C803249D1BF33DCF00BC432E /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
 		F886D7041BE8917500BA388A /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		F886D7051BE8917500BA388A /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		F886D7061BE8917500BA388A /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
@@ -723,6 +723,7 @@
 		80CF662A1BE8499E005CC073 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C80324811BF33DCF00BC432E /* SecondView */,
 				F886D7031BE8917500BA388A /* RootController */,
 				80CF662C1BE8499E005CC073 /* FirstView */,
 				80CF66311BE8499E005CC073 /* ThirdView */,
@@ -750,7 +751,6 @@
 		80CF662C1BE8499E005CC073 /* FirstView */ = {
 			isa = PBXGroup;
 			children = (
-				C80324461BF331C600BC432E /* SecondView */,
 				B87DBE461BE85C9A004D9899 /* Cells */,
 				B87DBE471BE85CA0004D9899 /* MineViews */,
 				80CF66421BE84C8A005CC073 /* MineViewController.h */,
@@ -1026,83 +1026,6 @@
 			path = login;
 			sourceTree = "<group>";
 		};
-		C80324461BF331C600BC432E /* SecondView */ = {
-			isa = PBXGroup;
-			children = (
-				C80324471BF331C600BC432E /* Classes */,
-				C80324481BF331C600BC432E /* Frameworks */,
-				C803244B1BF331C600BC432E /* SecCustomController */,
-				C80324561BF331C600BC432E /* SecCustomView */,
-				C80324611BF331C600BC432E /* ShowViewController.h */,
-				C80324621BF331C600BC432E /* ShowViewController.m */,
-			);
-			path = SecondView;
-			sourceTree = "<group>";
-		};
-		C80324471BF331C600BC432E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		C80324481BF331C600BC432E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C80324491BF331C600BC432E /* citylist */,
-				C803244A1BF331C600BC432E /* citylistdemo */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		C80324491BF331C600BC432E /* citylist */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = citylist;
-			sourceTree = "<group>";
-		};
-		C803244A1BF331C600BC432E /* citylistdemo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = citylistdemo;
-			sourceTree = "<group>";
-		};
-		C803244B1BF331C600BC432E /* SecCustomController */ = {
-			isa = PBXGroup;
-			children = (
-				C803244C1BF331C600BC432E /* SecBangController.h */,
-				C803244D1BF331C600BC432E /* SecBangController.m */,
-				C803244E1BF331C600BC432E /* SecCaiViewController.h */,
-				C803244F1BF331C600BC432E /* SecCaiViewController.m */,
-				C80324501BF331C600BC432E /* SecDongTingViewController.h */,
-				C80324511BF331C600BC432E /* SecDongTingViewController.m */,
-				C80324521BF331C600BC432E /* SecGeDanController.h */,
-				C80324531BF331C600BC432E /* SecGeDanController.m */,
-				C80324541BF331C600BC432E /* ZongBangController.h */,
-				C80324551BF331C600BC432E /* ZongBangController.m */,
-			);
-			path = SecCustomController;
-			sourceTree = "<group>";
-		};
-		C80324561BF331C600BC432E /* SecCustomView */ = {
-			isa = PBXGroup;
-			children = (
-				C80324571BF331C600BC432E /* CustomPeopleImage.h */,
-				C80324581BF331C600BC432E /* CustomPeopleImage.m */,
-				C80324591BF331C600BC432E /* DongTingCusotomCell.h */,
-				C803245A1BF331C600BC432E /* DongTingCusotomCell.m */,
-				C803245B1BF331C600BC432E /* SecCustomCell.h */,
-				C803245C1BF331C600BC432E /* SecCustomCell.m */,
-				C803245D1BF331C600BC432E /* SecCustomImageData.h */,
-				C803245E1BF331C600BC432E /* SecCustomImageData.m */,
-				C803245F1BF331C600BC432E /* SecCustomImageView.h */,
-				C80324601BF331C600BC432E /* SecCustomImageView.m */,
-			);
-			path = SecCustomView;
-			sourceTree = "<group>";
-		};
 		C80324701BF3330A00BC432E /* 图标 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1116,6 +1039,83 @@
 				C80324781BF3330A00BC432E /* zongbang@2x.png */,
 			);
 			path = "图标";
+			sourceTree = "<group>";
+		};
+		C80324811BF33DCF00BC432E /* SecondView */ = {
+			isa = PBXGroup;
+			children = (
+				C80324821BF33DCF00BC432E /* Classes */,
+				C80324831BF33DCF00BC432E /* Frameworks */,
+				C80324861BF33DCF00BC432E /* SecCustomController */,
+				C80324911BF33DCF00BC432E /* SecCustomView */,
+				C803249C1BF33DCF00BC432E /* ShowViewController.h */,
+				C803249D1BF33DCF00BC432E /* ShowViewController.m */,
+			);
+			path = SecondView;
+			sourceTree = "<group>";
+		};
+		C80324821BF33DCF00BC432E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C80324831BF33DCF00BC432E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C80324841BF33DCF00BC432E /* citylist */,
+				C80324851BF33DCF00BC432E /* citylistdemo */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		C80324841BF33DCF00BC432E /* citylist */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = citylist;
+			sourceTree = "<group>";
+		};
+		C80324851BF33DCF00BC432E /* citylistdemo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = citylistdemo;
+			sourceTree = "<group>";
+		};
+		C80324861BF33DCF00BC432E /* SecCustomController */ = {
+			isa = PBXGroup;
+			children = (
+				C80324871BF33DCF00BC432E /* SecBangController.h */,
+				C80324881BF33DCF00BC432E /* SecBangController.m */,
+				C80324891BF33DCF00BC432E /* SecCaiViewController.h */,
+				C803248A1BF33DCF00BC432E /* SecCaiViewController.m */,
+				C803248B1BF33DCF00BC432E /* SecDongTingViewController.h */,
+				C803248C1BF33DCF00BC432E /* SecDongTingViewController.m */,
+				C803248D1BF33DCF00BC432E /* SecGeDanController.h */,
+				C803248E1BF33DCF00BC432E /* SecGeDanController.m */,
+				C803248F1BF33DCF00BC432E /* ZongBangController.h */,
+				C80324901BF33DCF00BC432E /* ZongBangController.m */,
+			);
+			path = SecCustomController;
+			sourceTree = "<group>";
+		};
+		C80324911BF33DCF00BC432E /* SecCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				C80324921BF33DCF00BC432E /* CustomPeopleImage.h */,
+				C80324931BF33DCF00BC432E /* CustomPeopleImage.m */,
+				C80324941BF33DCF00BC432E /* DongTingCusotomCell.h */,
+				C80324951BF33DCF00BC432E /* DongTingCusotomCell.m */,
+				C80324961BF33DCF00BC432E /* SecCustomCell.h */,
+				C80324971BF33DCF00BC432E /* SecCustomCell.m */,
+				C80324981BF33DCF00BC432E /* SecCustomImageData.h */,
+				C80324991BF33DCF00BC432E /* SecCustomImageData.m */,
+				C803249A1BF33DCF00BC432E /* SecCustomImageView.h */,
+				C803249B1BF33DCF00BC432E /* SecCustomImageView.m */,
+			);
+			path = SecCustomView;
 			sourceTree = "<group>";
 		};
 		F886D7031BE8917500BA388A /* RootController */ = {
@@ -1369,12 +1369,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C80324691BF331C600BC432E /* DongTingCusotomCell.m in Sources */,
+				C80324A41BF33DCF00BC432E /* DongTingCusotomCell.m in Sources */,
 				80CF66501BE84CF4005CC073 /* FindViewController.m in Sources */,
 				181F15471BE9F4CC00D88B8F /* FithSetData.m in Sources */,
 				B87DBE561BE86002004D9899 /* HomePageCellData.m in Sources */,
 				F886D7091BE8917500BA388A /* TabBarController.m in Sources */,
-				C80324631BF331C600BC432E /* SecBangController.m in Sources */,
+				C803249E1BF33DCF00BC432E /* SecBangController.m in Sources */,
 				F886D7081BE8917500BA388A /* NavigationController.m in Sources */,
 				183F2B4A1BF2118E0039E5D3 /* FithBannerView.m in Sources */,
 				80CF66711BE85557005CC073 /* FindData.m in Sources */,
@@ -1382,15 +1382,15 @@
 				80CF666E1BE85530005CC073 /* Engin.m in Sources */,
 				B87DBE4D1BE85EFD004D9899 /* HeaderViewData.m in Sources */,
 				F886D7101BE89F1A00BA388A /* FourthMessageCellData.m in Sources */,
-				C80324671BF331C600BC432E /* ZongBangController.m in Sources */,
-				C803246B1BF331C600BC432E /* SecCustomImageData.m in Sources */,
-				C803246D1BF331C600BC432E /* ShowViewController.m in Sources */,
+				C80324A21BF33DCF00BC432E /* ZongBangController.m in Sources */,
+				C80324A61BF33DCF00BC432E /* SecCustomImageData.m in Sources */,
+				C80324A81BF33DCF00BC432E /* ShowViewController.m in Sources */,
 				186EFC981BF1744200D3F93B /* FithVIPData.m in Sources */,
 				80CF66441BE84C8A005CC073 /* MineViewController.m in Sources */,
 				18B6BF511BF08A9300B0D809 /* FithFindViewController.m in Sources */,
-				C80324661BF331C600BC432E /* SecGeDanController.m in Sources */,
-				C803246C1BF331C600BC432E /* SecCustomImageView.m in Sources */,
-				C80324651BF331C600BC432E /* SecDongTingViewController.m in Sources */,
+				C80324A11BF33DCF00BC432E /* SecGeDanController.m in Sources */,
+				C80324A71BF33DCF00BC432E /* SecCustomImageView.m in Sources */,
+				C80324A01BF33DCF00BC432E /* SecDongTingViewController.m in Sources */,
 				18884D391BF2047A0000AAE4 /* FithGameData.m in Sources */,
 				18884D3C1BF206780000AAE4 /* FithGameTableViewCell.m in Sources */,
 				18B6BF4E1BF08A7D00B0D809 /* FithMatchViewController.m in Sources */,
@@ -1398,16 +1398,16 @@
 				B87DBE4A1BE85EDB004D9899 /* HeaderView.m in Sources */,
 				80CF666B1BE8548B005CC073 /* FindTableViewCell.m in Sources */,
 				80CF66071BE8480B005CC073 /* main.m in Sources */,
-				C803246A1BF331C600BC432E /* SecCustomCell.m in Sources */,
+				C80324A51BF33DCF00BC432E /* SecCustomCell.m in Sources */,
 				80CF664A1BE84CCE005CC073 /* SingingViewController.m in Sources */,
 				80CF66541BE851A0005CC073 /* EngineInterface.m in Sources */,
-				C80324641BF331C600BC432E /* SecCaiViewController.m in Sources */,
+				C803249F1BF33DCF00BC432E /* SecCaiViewController.m in Sources */,
 				18B6BF7F1BF0C61B00B0D809 /* FithVIPViewController.m in Sources */,
 				80CF664D1BE84CE0005CC073 /* ChatViewController.m in Sources */,
 				186EFC9B1BF1781900D3F93B /* FithVipTableViewCell.m in Sources */,
 				18C72BFE1BEA23740017B3A7 /* FithSetTableViewCell.m in Sources */,
 				18C72BFB1BEA1EE50017B3A7 /* FithSetViewController.m in Sources */,
-				C80324681BF331C600BC432E /* CustomPeopleImage.m in Sources */,
+				C80324A31BF33DCF00BC432E /* CustomPeopleImage.m in Sources */,
 				B87DBE531BE85F93004D9899 /* HomePageCell.m in Sources */,
 				18B6BF4B1BF08A4300B0D809 /* FithGameViewController.m in Sources */,
 			);
