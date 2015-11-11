@@ -86,7 +86,6 @@
 		18D04B3E1BEB6E4000847BE1 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18D04B3D1BEB6E4000847BE1 /* icon@2x.png */; };
 		80CF66071BE8480B005CC073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CF66061BE8480B005CC073 /* main.m */; };
 		80CF660A1BE8480B005CC073 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CF66091BE8480B005CC073 /* AppDelegate.m */; };
-		80CF66121BE8480B005CC073 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CF66111BE8480B005CC073 /* Images.xcassets */; };
 		80CF66151BE8480B005CC073 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80CF66131BE8480B005CC073 /* LaunchScreen.xib */; };
 		80CF66211BE8480B005CC073 /* SingPubTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CF66201BE8480B005CC073 /* SingPubTests.m */; };
 		80CF66441BE84C8A005CC073 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CF66431BE84C8A005CC073 /* MineViewController.m */; };
@@ -96,7 +95,6 @@
 		80CF66501BE84CF4005CC073 /* FindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CF664F1BE84CF4005CC073 /* FindViewController.m */; };
 		80CF66541BE851A0005CC073 /* EngineInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CF66531BE851A0005CC073 /* EngineInterface.m */; };
 		80CF66581BE85247005CC073 /* tl_photo_slide_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 80CF66571BE85247005CC073 /* tl_photo_slide_back.png */; };
-		80CF665C1BE852CA005CC073 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 80CF665B1BE852CA005CC073 /* Default-568h@2x.png */; };
 		80CF665E1BE8535A005CC073 /* board_areawork.png in Resources */ = {isa = PBXBuildFile; fileRef = 80CF665D1BE8535A005CC073 /* board_areawork.png */; };
 		80CF66601BE85360005CC073 /* board_hotduet.png in Resources */ = {isa = PBXBuildFile; fileRef = 80CF665F1BE85360005CC073 /* board_hotduet.png */; };
 		80CF66621BE85365005CC073 /* board_hotsolo.png in Resources */ = {isa = PBXBuildFile; fileRef = 80CF66611BE85365005CC073 /* board_hotsolo.png */; };
@@ -165,6 +163,7 @@
 		B87DBE8E1BE861BA004D9899 /* offline_colloction.png in Resources */ = {isa = PBXBuildFile; fileRef = B87DBE721BE861BA004D9899 /* offline_colloction.png */; };
 		B87DBE8F1BE861BA004D9899 /* titlebar_back_nonal.png in Resources */ = {isa = PBXBuildFile; fileRef = B87DBE731BE861BA004D9899 /* titlebar_back_nonal.png */; };
 		B87DBE901BE861BA004D9899 /* titlebar_close.png in Resources */ = {isa = PBXBuildFile; fileRef = B87DBE741BE861BA004D9899 /* titlebar_close.png */; };
+		C80324451BF330A500BC432E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CF66111BE8480B005CC073 /* Images.xcassets */; };
 		F886D7081BE8917500BA388A /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D7051BE8917500BA388A /* NavigationController.m */; };
 		F886D7091BE8917500BA388A /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D7071BE8917500BA388A /* TabBarController.m */; };
 		F886D70D1BE8988200BA388A /* FourthMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D70C1BE8988200BA388A /* FourthMessageCell.m */; };
@@ -1052,7 +1051,7 @@
 		80CF65F91BE8480B005CC073 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "中软mini011";
 				TargetAttributes = {
 					80CF66001BE8480B005CC073 = {
@@ -1180,7 +1179,6 @@
 				B87DBE2C1BE85C44004D9899 /* mini_play_btn_2_pressed.png in Resources */,
 				18B6BF7B1BF0BF9100B0D809 /* shuikanguowo@2x.png in Resources */,
 				B87DBE8C1BE861BA004D9899 /* myinfo_vip_center.png in Resources */,
-				80CF665C1BE852CA005CC073 /* Default-568h@2x.png in Resources */,
 				B87DBE7D1BE861BA004D9899 /* login_pwd_icon_normal.png in Resources */,
 				B87DBE851BE861BA004D9899 /* mini_paly_btn_normal.png in Resources */,
 				B87DBE401BE85C44004D9899 /* mini_player_frames_white_07.png in Resources */,
@@ -1190,7 +1188,7 @@
 				18B6BF691BF0BF9100B0D809 /* bofangtexiao@2x.png in Resources */,
 				80CF66601BE85360005CC073 /* board_hotduet.png in Resources */,
 				181F153D1BE9F17D00D88B8F /* faxian_select@2x.png in Resources */,
-				80CF66121BE8480B005CC073 /* Images.xcassets in Resources */,
+				C80324451BF330A500BC432E /* Images.xcassets in Resources */,
 				181F15431BE9F17D00D88B8F /* xiaoxi_select@2x.png in Resources */,
 				B87DBE331BE85C44004D9899 /* mini_player_frames_06.png in Resources */,
 				B87DBE361BE85C44004D9899 /* mini_player_frames_09.png in Resources */,
@@ -1204,7 +1202,6 @@
 				18D04B371BEB5AAC00847BE1 /* erweima@2x.png in Resources */,
 				B87DBE8D1BE861BA004D9899 /* myinfo_visit_me.png in Resources */,
 				B87DBE311BE85C44004D9899 /* mini_player_frames_04.png in Resources */,
-				80CF66121BE8480B005CC073 /* Images.xcassets in Resources */,
 				B87DBE8A1BE861BA004D9899 /* myinfo_head_bg.jpg in Resources */,
 				189F9CD31BEE5CC500560261 /* remenbisai@2x.png in Resources */,
 				1856B3881BEC9F8F00B0F1CA /* biaoqing.png in Resources */,
@@ -1315,6 +1312,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1432,6 +1430,7 @@
 				);
 				INFOPLIST_FILE = SingPubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jyh.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingPub.app/SingPub";
 			};
@@ -1447,6 +1446,7 @@
 				);
 				INFOPLIST_FILE = SingPubTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jyh.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SingPub.app/SingPub";
 			};
