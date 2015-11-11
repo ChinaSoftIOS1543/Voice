@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
+<<<<<<< HEAD
+	<string>CBB8B4AE-68F1-448C-87FB-387033C153B1</string>
+=======
+	<string>327AA821-B697-4807-8028-510F10C1BED9</string>
+>>>>>>> origin/master
+=======
+	<string>327AA821-B697-4807-8028-510F10C1BED9</string>
+>>>>>>> origin/master
+	<key>IDESourceControlProjectName</key>
+	<string>SingPub</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>38BEE3D26ED485B6BA2E15FC435657E921CD9A58</key>
+		<string>https://github.com/ChinaSoftIOS1543/SingPub.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SingPub.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>38BEE3D26ED485B6BA2E15FC435657E921CD9A58</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ChinaSoftIOS1543/SingPub.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>38BEE3D26ED485B6BA2E15FC435657E921CD9A58</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>38BEE3D26ED485B6BA2E15FC435657E921CD9A58</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SingPub</string>
+		</dict>
+	</array>
+</dict>
+</plist>
