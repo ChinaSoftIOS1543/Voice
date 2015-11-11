@@ -30,6 +30,10 @@
     
     [self.window makeKeyAndVisible];
     
+    EngineInterface * engine = [[EngineInterface alloc] init];
+    
+    [engine readPlist];
+    
     return YES;
 }
 

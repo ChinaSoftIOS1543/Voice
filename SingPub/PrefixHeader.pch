@@ -16,4 +16,7 @@
 #import "PublicDefine.h"
 #import "ZBarSDK.h"
 
+
+#import "EngineInterface.h"
+
 #endif

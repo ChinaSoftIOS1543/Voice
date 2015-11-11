@@ -10,4 +10,12 @@
 
 @implementation EngineInterface
 
+-(NSDictionary*)readPlist{
+    NSString* paths = [[NSBundle mainBundle] pathForResource:@"citydict" ofType:@"plist"];
+    
+    NSDictionary* dicList = [NSDictionary dictionaryWithContentsOfFile:paths];
+    
+    return dicList;
+}
+
 @end

@@ -10,4 +10,7 @@
 
 @interface EngineInterface : NSObject
 
+
+-(NSDictionary*)readPlist;
+
 @end
