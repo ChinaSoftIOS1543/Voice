@@ -17,8 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    [self initUI];
     // Do any additional setup after loading the view.
 }
+-(void)initUI{
+    self.navigationItem.title = @"找好友";
+    self.navigationItem.rightBarButtonItem.title = @"邀请好友";
+    
+    
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
