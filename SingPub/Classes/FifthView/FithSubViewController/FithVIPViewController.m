@@ -151,8 +151,6 @@
         NSArray *mineArray = (NSArray *)[_itemsLists objectForKey:[NSString stringWithFormat:@"arr%ld",(long )indexPath.section+1]];
         FithVIPData *mine = [mineArray objectAtIndex:indexPath.row];
         cell.data = mine;
-        if (indexPath.section == 0) {
-        }
         
     }
    

@@ -23,8 +23,7 @@
 -(void)initUI{
     self.navigationItem.title = @"找好友";
     self.navigationItem.rightBarButtonItem.title = @"邀请好友";
-    
-    
+    self.navigationItem.rightBarButtonItem.tintColor = [UIColor colorWithRed:215/255.0f green:161/255.0f blue:57/255.0f alpha:1.0f];
     
 }
 
