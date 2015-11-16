@@ -212,6 +212,9 @@
 		18DD01361BF96AA60059C9FB /* woguanzhudegeyou.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DD01021BF96AA60059C9FB /* woguanzhudegeyou.png */; };
 		18DD01371BF96AA60059C9FB /* woguanzhudehechang.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DD01031BF96AA60059C9FB /* woguanzhudehechang.png */; };
 		18DD01381BF96AA60059C9FB /* yaoqingwodehechang.png in Resources */ = {isa = PBXBuildFile; fileRef = 18DD01041BF96AA60059C9FB /* yaoqingwodehechang.png */; };
+		18DD01391BF971FD0059C9FB /* SecMVController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED2861BF6EBB7008D6258 /* SecMVController.m */; };
+		18DD013A1BF971FD0059C9FB /* SecQuanGuoController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED2891BF6EEA1008D6258 /* SecQuanGuoController.m */; };
+		18DD013B1BF971FD0059C9FB /* SecHeChangController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED28C1BF6F013008D6258 /* SecHeChangController.m */; };
 		80CF66071BE8480B005CC073 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CF66061BE8480B005CC073 /* main.m */; };
 		80CF660A1BE8480B005CC073 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CF66091BE8480B005CC073 /* AppDelegate.m */; };
 		80CF66151BE8480B005CC073 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80CF66131BE8480B005CC073 /* LaunchScreen.xib */; };
@@ -275,9 +278,6 @@
 		C80324A61BF33DCF00BC432E /* SecCustomImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324991BF33DCF00BC432E /* SecCustomImageData.m */; };
 		C80324A71BF33DCF00BC432E /* SecCustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C803249B1BF33DCF00BC432E /* SecCustomImageView.m */; };
 		C80324A81BF33DCF00BC432E /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C803249D1BF33DCF00BC432E /* ShowViewController.m */; };
-		C87ED2871BF6EBB7008D6258 /* SecMVController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED2861BF6EBB7008D6258 /* SecMVController.m */; };
-		C87ED28A1BF6EEA1008D6258 /* SecQuanGuoController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED2891BF6EEA1008D6258 /* SecQuanGuoController.m */; };
-		C87ED28D1BF6F013008D6258 /* SecHeChangController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED28C1BF6F013008D6258 /* SecHeChangController.m */; };
 		C87ED2901BF6F3DA008D6258 /* SecCustomHeChangCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED28F1BF6F3DA008D6258 /* SecCustomHeChangCell.m */; };
 		C8A0C2B11BF57E8200D3EAB6 /* SecKeGgXiuController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A0C2B01BF57E8200D3EAB6 /* SecKeGgXiuController.m */; };
 		F886D7081BE8917500BA388A /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D7051BE8917500BA388A /* NavigationController.m */; };
@@ -1584,20 +1584,12 @@
 		C80324811BF33DCF00BC432E /* SecondView */ = {
 			isa = PBXGroup;
 			children = (
-				C80324821BF33DCF00BC432E /* Classes */,
 				C80324861BF33DCF00BC432E /* SecCustomController */,
 				C80324911BF33DCF00BC432E /* SecCustomView */,
 				C803249C1BF33DCF00BC432E /* ShowViewController.h */,
 				C803249D1BF33DCF00BC432E /* ShowViewController.m */,
 			);
 			path = SecondView;
-			sourceTree = "<group>";
-		};
-		C80324821BF33DCF00BC432E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		C80324861BF33DCF00BC432E /* SecCustomController */ = {
@@ -1929,6 +1921,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DD01391BF971FD0059C9FB /* SecMVController.m in Sources */,
+				18DD013A1BF971FD0059C9FB /* SecQuanGuoController.m in Sources */,
+				18DD013B1BF971FD0059C9FB /* SecHeChangController.m in Sources */,
 				18DD003F1BF9665F0059C9FB /* SelfInfoViewController.m in Sources */,
 				18DD003C1BF9665F0059C9FB /* MinePhotoAlbumViewController.m in Sources */,
 				18DD00311BF9665F0059C9FB /* HeaderView.m in Sources */,
@@ -1997,14 +1992,12 @@
 				18DD003E1BF9665F0059C9FB /* WhoSeenMeViewController.m in Sources */,
 				18D0D54A1BF35B4E0037BB5D /* FithFindFrTableViewCell.m in Sources */,
 				18B6BF7F1BF0C61B00B0D809 /* FithVIPViewController.m in Sources */,
-
 				18DD00301BF9665F0059C9FB /* MineViewController.m in Sources */,
 				18DD009B1BF968AA0059C9FB /* ChatChooseViewController.m in Sources */,
 				18DD00951BF968AA0059C9FB /* ChatViewController.m in Sources */,
 				18DD00701BF967200059C9FB /* ThirdClassifyTableViewCell.m in Sources */,
 				18DD00781BF967200059C9FB /* SingSongViewController.m in Sources */,
 				18DD00811BF967200059C9FB /* ThirdLocalRecordedView.m in Sources */,
-
 				186EFC9B1BF1781900D3F93B /* FithVipTableViewCell.m in Sources */,
 				18DD00741BF967200059C9FB /* ThirdSingStarTableViewCell.m in Sources */,
 				18DD00361BF9665F0059C9FB /* LaunchChorusViewController.m in Sources */,
@@ -2013,9 +2006,7 @@
 				18C72BFB1BEA1EE50017B3A7 /* FithSetViewController.m in Sources */,
 				18DD00281BF9665F0059C9FB /* HomePageCellData.m in Sources */,
 				C80324A31BF33DCF00BC432E /* CustomPeopleImage.m in Sources */,
-
 				18DD00381BF9665F0059C9FB /* MineCollectViewController.m in Sources */,
-
 				18B6BF4B1BF08A4300B0D809 /* FithGameViewController.m in Sources */,
 				18DD00371BF9665F0059C9FB /* MineBackpackViewController.m in Sources */,
 				18DD00731BF967200059C9FB /* ThirdSingingTableViewCellData.m in Sources */,
