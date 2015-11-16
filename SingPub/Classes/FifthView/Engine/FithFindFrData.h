@@ -10,4 +10,11 @@
 
 @interface FithFindFrData : NSObject
 
+@property (nonatomic,copy) NSString *userImg;
+@property (nonatomic,copy) NSString *userName;
+@property (nonatomic,copy) NSString *lvText;
+@property (nonatomic,copy) NSString *lvImg;
+@property (nonatomic,copy) NSString *UserInfo;
+@property (nonatomic,copy) NSString *likeInfo;
+
 @end

@@ -14,4 +14,5 @@
 -(NSDictionary *)getFindSetdata;
 -(NSDictionary *)getFithVipdata;
 -(NSDictionary *)getFithGamedata;
+-(NSDictionary *)getFindFrdata;
 @end

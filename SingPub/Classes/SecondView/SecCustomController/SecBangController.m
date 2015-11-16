@@ -64,8 +64,8 @@
     [self initTable];
     [self.view addSubview:_scroller];
     
-    EngineInterface *engin=[[EngineInterface alloc] init];
-    NSDictionary *dic=[[NSDictionary alloc]initWithDictionary:[engin readPlist]];
+//    EngineInterface *engin=[[EngineInterface alloc] init];
+//    NSDictionary *dic=[[NSDictionary alloc]initWithDictionary:[engin readPlist]];
     _rightView=[[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
     _rightView.backgroundColor=[UIColor redColor];
     [self initRightView];

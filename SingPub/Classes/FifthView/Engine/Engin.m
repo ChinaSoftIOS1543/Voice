@@ -11,6 +11,8 @@
 #import "FithSetData.h"
 #import "FithVIPData.h"
 #import "FithGameData.h"
+#import "FithFindFrData.h"
+
 @interface Engin(){
     NSArray *arr;
     NSMutableDictionary *dic;
@@ -298,6 +300,62 @@ static Engin *instance = nil;
     [arr1 addObject:data2];
     [dic setObject:arr1 forKey:@"arr1"];
     
+    
+    return dic;
+}
+
+-(NSDictionary *)getFindFrdata{
+    dic = [[NSMutableDictionary alloc] init];
+    arr1 = [[NSMutableArray alloc] init];
+    //读数据库
+    FithFindFrData *data = [[FithFindFrData alloc] init];
+    data.userImg = @"";
+    data.userName = @"JOYCEQ||||";
+    data.lvImg = @"";
+    data.lvText = @"⭐️歌唱新人";
+    data.UserInfo = @"对对对，我喝高了！喝高了！喝高了！啊哈哈哈哈哈哈哈！这歌玩的开心死我！😂Cause！Got High！Cause！Got High！Cause！Got High！周末我就说歌拖鞋人！😂";
+    [arr1 addObject:data];
+    
+    FithFindFrData *data1 = [[FithFindFrData alloc] init];
+    data1.userImg = @"";
+    data1.userName = @"Chinatown";
+    data1.lvImg = @"";
+    data1.lvText = @"⭐️歌唱新人";
+    data1.UserInfo = @"《人间》常石磊的歌真的是太难唱了，我真的跪了❤️";
+    [arr1 addObject:data1];
+    
+    FithFindFrData *data2 = [[FithFindFrData alloc] init];
+    data2.userImg = @"";
+    data2.userName = @"敬敬敬兒";
+    data2.lvImg = @"";
+    data2.lvText = @"👑世界巨星";
+    data2.UserInfo = @"这几天刘天王老是找我约歌，好烦，今天小刚叔还找我拍电影，说我一定能火，真的么😂";
+    [arr1 addObject:data2];
+    
+    FithFindFrData *data3 = [[FithFindFrData alloc] init];
+    data3.userImg = @"";
+    data3.userName = @"我系大锅";
+    data3.lvImg = @"";
+    data3.lvText = @"🌞实力唱将";
+    data3.UserInfo = @"我的自制唱片《雨霖铃》正式发行了，大家关注我哦，摸摸大👶";
+    [arr1 addObject:data3];
+    
+    FithFindFrData *data4 = [[FithFindFrData alloc] init];
+    data4.userImg = @"";
+    data4.userName = @"长兄";
+    data4.lvImg = @"";
+    data4.lvText = @"💎闪亮新秀";
+    data4.UserInfo = @"中国有句古话说的好，～～如父😤";
+    [arr1 addObject:data4];
+    
+    FithFindFrData *data5 = [[FithFindFrData alloc] init];
+    data5.userImg = @"";
+    data5.userName = @"三宝";
+    data5.lvImg = @"";
+    data5.lvText = @"6⃣️沉默大师";
+    data5.UserInfo = @"第N次声明，我家不卖烤肉，不卖麻辣烫，更不是厨房！！！😂";
+    [arr1 addObject:data5];
+    [dic setObject:arr1 forKey:@"arr1"];
     
     return dic;
 }

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FithFindFrData.h"
 @interface FithFindFrTableViewCell : UITableViewCell
+
+@property (nonatomic,strong) FithFindFrData *data;
+@property (nonatomic,retain) UILabel *userInfo;
+
+
+-(void)updateFithFindFrdata;
+-(void)setUserInfoText:(NSString*)text;
 
 @end

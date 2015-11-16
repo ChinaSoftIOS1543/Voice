@@ -12,5 +12,22 @@
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
+#define Request_Button 5000
+#define Classify_Button 5100
+#define Wonderful_Button 5200
+#define SingSong_Button 5300
+
+
+//枚举ScollerView
+typedef NS_ENUM(NSInteger ,HWScrollViewType)
+{
+    HWScrollViewTypeNone,
+    
+    HWScrollViewTypeFuction,
+    
+    HWScrollViewTypeBanner,
+    
+    HWScrollViewTypeMax
+};
 
 #endif

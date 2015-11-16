@@ -213,11 +213,11 @@
         
     }
     
-    NSArray *items = [_itemsLists objectForKey:[NSString stringWithFormat:@"arr%d",indexPath.section+1]];
+    NSArray *items = [_itemsLists objectForKey:[NSString stringWithFormat:@"arr%ld",(long)indexPath.section+1]];
     
     int x = (int)items.count;
     if (indexPath.row>=0 && indexPath.row < x) {
-        NSArray *mineArray = (NSArray *)[_itemsLists objectForKey:[NSString stringWithFormat:@"arr%d",indexPath.section+1]];
+        NSArray *mineArray = (NSArray *)[_itemsLists objectForKey:[NSString stringWithFormat:@"arr%ld",(long)indexPath.section+1]];
         FindData *mine = [mineArray objectAtIndex:indexPath.row];
         cell.data = mine;
     }
