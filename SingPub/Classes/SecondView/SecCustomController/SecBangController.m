@@ -113,6 +113,9 @@
         NSLog(@"111");
         _scroller.contentOffset=CGPointMake(SCREEN_WIDTH, 0);
     }
+   
+    
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

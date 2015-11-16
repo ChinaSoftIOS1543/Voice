@@ -1,26 +1,20 @@
 //
-//  ZongBangController.m
+//  SecKeGgXiuController.m
 //  SingPub
 //
-//  Created by 中软mini005 on 15/11/10.
+//  Created by 中软mini005 on 15/11/13.
 //  Copyright © 2015年 中软mini011. All rights reserved.
 //
 
-#import "ZongBangController.h"
-#import "HeaderView.h"
+#import "SecKeGgXiuController.h"
 
-@interface ZongBangController ()<UICollectionViewDataSource,UICollectionViewDelegate>
-{
-   
-}
+@interface SecKeGgXiuController ()<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
 
-@property(nonatomic,strong)UISegmentedControl * seg;
-@property(nonatomic,copy)NSMutableArray *arr;
-@property(nonatomic,strong)UICollectionView * collectionView;
+@property(nonatomic,strong)UICollectionView *collectionView;
 
 @end
 
-@implementation ZongBangController
+@implementation SecKeGgXiuController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,25 +28,9 @@
     [super viewWillAppear:animated];
     [self initUI];
 }
--(void)viewWillDisappear:(BOOL)animated
-{
-    _seg.hidden=YES;
-}
 -(void)initUI
 {
-    //分段控制器初始化
-    NSArray * arr=[[NSArray alloc] initWithObjects:@"作品榜",@"歌手榜",@"财富榜", nil];
-    _seg=[[UISegmentedControl alloc] initWithItems:arr];
-    _seg.selectedSegmentIndex=0;
-    _seg.frame=CGRectMake(SCREEN_WIDTH/4, 10, SCREEN_WIDTH/2, 30);
-    _seg.tintColor=[UIColor grayColor];
-    _seg.backgroundColor=[UIColor whiteColor];
-    [_seg  addTarget:self action:@selector(segClick:) forControlEvents:UIControlEventValueChanged];
-
-    [self.navigationController.navigationBar addSubview:_seg];
-    
     [self initCollentionView];
-   
 }
 
 -(void)initCollentionView
@@ -61,16 +39,17 @@
     
     //[flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
     //设置headView的尺寸 没有设置显示不出来
-    [flowLayout setHeaderReferenceSize:CGSizeMake(SCREEN_WIDTH, 20)];
-        self.collectionView=[[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64) collectionViewLayout:flowLayout];
-         self.collectionView.dataSource=self;
-         self.collectionView.delegate=self;
-        [self.collectionView setBackgroundColor:[UIColor clearColor]];
-        //注册Cell，必须要有
-        [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
-        //注册headView，有headView必须有注册
-        [ self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
-        [self.view addSubview: self.collectionView];
+    //[flowLayout setHeaderReferenceSize:CGSizeMake(SCREEN_WIDTH, 20)];
+    //[flowLayout sectionFootersPinToVisibleBounds];
+    self.collectionView=[[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64) collectionViewLayout:flowLayout];
+    self.collectionView.dataSource=self;
+    self.collectionView.delegate=self;
+    [self.collectionView setBackgroundColor:[UIColor clearColor]];
+    //注册Cell，必须要有
+    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
+    //注册headView，有headView必须有注册
+    [ self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView"];
+    [self.view addSubview: self.collectionView];
     
 }
 
@@ -87,40 +66,49 @@
 //定义展示的UICollectionViewCell的个数
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-     NSInteger  count = 0;
-        switch (section) {
-            case 0:
-            {
-                count=3;
-            }
-                break;
-            case 1:
-            {
-                count=5;
-            }
-                break;
-            case 2:
-            {
-                count=2;
-            }
-                break;
+    NSInteger  count = 0;
+    switch (section) {
+        case 0:
+        {
+            count=2;
         }
-
-          return count;
+            break;
+        case 1:
+        {
+            count=5;
+        }
+            break;
+        case 2:
+        {
+            count=2;
+        }
+            break;
+        case 3:
+        {
+            count=4;
+        }
+            break;
+        case 4:
+        {
+            count=2;
+        }
+            break;
+    }
+    
+    return count;
     
 }
 
 //定义展示的Section的个数
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
-    return 3;
+    return 5;
 }
 
-//每个UICollectionView展示的内容
+//每个UICollectionView展示的内容 cell重用机制
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString * CellIdentifier = @"UICollectionViewCell";
-    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
     
     cell.backgroundColor = [UIColor blackColor];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
@@ -134,6 +122,18 @@
     [cell.contentView addSubview:label];
     [cell.contentView addSubview:imageView];
     return cell;
+}
+//headView重用机制
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
+    
+    UICollectionReusableView* view = nil;
+    
+    if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
+        view = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
+        view.backgroundColor=[UIColor blueColor];
+    }
+    
+    return view;
 }
 
 #pragma make - CollectionViewDelegate
@@ -152,23 +152,6 @@
 }
 
 
-//设置headView的回调函数
-- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
-{
-    UICollectionReusableView *reusableview = nil;
-    
-    if (kind == UICollectionElementKindSectionHeader)
-    {
-        reusableview = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
-        
-        reusableview.backgroundColor = [UIColor redColor];
-        
-    }
-    UIView * view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 20)];
-    view.backgroundColor=[UIColor orangeColor];
-    [reusableview addSubview:view];
-    return reusableview;
-}
 
 #pragma mark --UICollectionViewDelegate
 
@@ -188,6 +171,16 @@
 -(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     return YES;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
+{
+    if (section==0) {
+        return CGSizeMake(SCREEN_WIDTH, 100);
+    }else{
+        return CGSizeMake(SCREEN_WIDTH, 20);
+    }
+    
 }
 
 @end

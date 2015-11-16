@@ -16,6 +16,11 @@
 #import "SecDongTingViewController.h"
 #import "ZongBangController.h"
 #import "SecGeDanController.h"
+#import "SecKeGgXiuController.h"
+#import "SecMVController.h"
+#import "SecQuanGuoController.h"
+#import "SecHeChangController.h"
+
 
 @interface ShowViewController ()<UITableViewDataSource,UITableViewDelegate,SecCustomImageViewDelegate,CustomPeopleImageDeldgate>
 {
@@ -206,6 +211,8 @@
             break;
         case 3030:
         {
+            SecKeGgXiuController * keGe=[[SecKeGgXiuController alloc] init];
+            [self.navigationController pushViewController:keGe animated:YES];
         }
             break;
         case 3001:
@@ -216,14 +223,20 @@
             break;
         case 3011:
         {
+            SecMVController * mvController=[[SecMVController alloc] init];
+            [self.navigationController pushViewController:mvController animated:YES];
         }
             break;
-        case 3012:
+        case 3021:
         {
+            SecQuanGuoController * quanGuoController=[[SecQuanGuoController alloc] init];
+            [self.navigationController pushViewController:quanGuoController animated:YES];
         }
             break;
-        case 3013:
+        case 3031:
         {
+            SecHeChangController * heChangController=[[SecHeChangController alloc] init];
+            [self.navigationController pushViewController:heChangController animated:YES];
         }
             break;
 
