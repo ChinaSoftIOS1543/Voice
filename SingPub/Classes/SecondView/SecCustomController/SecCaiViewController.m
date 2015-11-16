@@ -10,7 +10,7 @@
 #import "SecCustomCell.h"
 #import "CustomPeopleImage.h"
 
-@interface SecCaiViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface SecCaiViewController ()<UITableViewDataSource,UITableViewDelegate,CustomPeopleImageDeldgate>
 {
     UIView * _sectionView;
     UIView * _sectionOtherView;

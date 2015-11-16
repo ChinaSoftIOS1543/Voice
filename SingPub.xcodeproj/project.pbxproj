@@ -185,6 +185,11 @@
 		C80324A61BF33DCF00BC432E /* SecCustomImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324991BF33DCF00BC432E /* SecCustomImageData.m */; };
 		C80324A71BF33DCF00BC432E /* SecCustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C803249B1BF33DCF00BC432E /* SecCustomImageView.m */; };
 		C80324A81BF33DCF00BC432E /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C803249D1BF33DCF00BC432E /* ShowViewController.m */; };
+		C87ED2871BF6EBB7008D6258 /* SecMVController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED2861BF6EBB7008D6258 /* SecMVController.m */; };
+		C87ED28A1BF6EEA1008D6258 /* SecQuanGuoController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED2891BF6EEA1008D6258 /* SecQuanGuoController.m */; };
+		C87ED28D1BF6F013008D6258 /* SecHeChangController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED28C1BF6F013008D6258 /* SecHeChangController.m */; };
+		C87ED2901BF6F3DA008D6258 /* SecCustomHeChangCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED28F1BF6F3DA008D6258 /* SecCustomHeChangCell.m */; };
+		C8A0C2B11BF57E8200D3EAB6 /* SecKeGgXiuController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A0C2B01BF57E8200D3EAB6 /* SecKeGgXiuController.m */; };
 		F886D7081BE8917500BA388A /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D7051BE8917500BA388A /* NavigationController.m */; };
 		F886D7091BE8917500BA388A /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D7071BE8917500BA388A /* TabBarController.m */; };
 		F886D70D1BE8988200BA388A /* FourthMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D70C1BE8988200BA388A /* FourthMessageCell.m */; };
@@ -446,6 +451,16 @@
 		C803249B1BF33DCF00BC432E /* SecCustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCustomImageView.m; sourceTree = "<group>"; };
 		C803249C1BF33DCF00BC432E /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
 		C803249D1BF33DCF00BC432E /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
+		C87ED2851BF6EBB7008D6258 /* SecMVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecMVController.h; sourceTree = "<group>"; };
+		C87ED2861BF6EBB7008D6258 /* SecMVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecMVController.m; sourceTree = "<group>"; };
+		C87ED2881BF6EEA1008D6258 /* SecQuanGuoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecQuanGuoController.h; sourceTree = "<group>"; };
+		C87ED2891BF6EEA1008D6258 /* SecQuanGuoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecQuanGuoController.m; sourceTree = "<group>"; };
+		C87ED28B1BF6F013008D6258 /* SecHeChangController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecHeChangController.h; sourceTree = "<group>"; };
+		C87ED28C1BF6F013008D6258 /* SecHeChangController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecHeChangController.m; sourceTree = "<group>"; };
+		C87ED28E1BF6F3DA008D6258 /* SecCustomHeChangCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecCustomHeChangCell.h; sourceTree = "<group>"; };
+		C87ED28F1BF6F3DA008D6258 /* SecCustomHeChangCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCustomHeChangCell.m; sourceTree = "<group>"; };
+		C8A0C2AF1BF57E8200D3EAB6 /* SecKeGgXiuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecKeGgXiuController.h; sourceTree = "<group>"; };
+		C8A0C2B01BF57E8200D3EAB6 /* SecKeGgXiuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecKeGgXiuController.m; sourceTree = "<group>"; };
 		F886D7041BE8917500BA388A /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		F886D7051BE8917500BA388A /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		F886D7061BE8917500BA388A /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
@@ -1055,7 +1070,6 @@
 			isa = PBXGroup;
 			children = (
 				C80324821BF33DCF00BC432E /* Classes */,
-				C80324831BF33DCF00BC432E /* Frameworks */,
 				C80324861BF33DCF00BC432E /* SecCustomController */,
 				C80324911BF33DCF00BC432E /* SecCustomView */,
 				C803249C1BF33DCF00BC432E /* ShowViewController.h */,
@@ -1071,29 +1085,6 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		C80324831BF33DCF00BC432E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C80324841BF33DCF00BC432E /* citylist */,
-				C80324851BF33DCF00BC432E /* citylistdemo */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		C80324841BF33DCF00BC432E /* citylist */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = citylist;
-			sourceTree = "<group>";
-		};
-		C80324851BF33DCF00BC432E /* citylistdemo */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = citylistdemo;
-			sourceTree = "<group>";
-		};
 		C80324861BF33DCF00BC432E /* SecCustomController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1107,6 +1098,14 @@
 				C803248E1BF33DCF00BC432E /* SecGeDanController.m */,
 				C803248F1BF33DCF00BC432E /* ZongBangController.h */,
 				C80324901BF33DCF00BC432E /* ZongBangController.m */,
+				C8A0C2AF1BF57E8200D3EAB6 /* SecKeGgXiuController.h */,
+				C8A0C2B01BF57E8200D3EAB6 /* SecKeGgXiuController.m */,
+				C87ED2851BF6EBB7008D6258 /* SecMVController.h */,
+				C87ED2861BF6EBB7008D6258 /* SecMVController.m */,
+				C87ED2881BF6EEA1008D6258 /* SecQuanGuoController.h */,
+				C87ED2891BF6EEA1008D6258 /* SecQuanGuoController.m */,
+				C87ED28B1BF6F013008D6258 /* SecHeChangController.h */,
+				C87ED28C1BF6F013008D6258 /* SecHeChangController.m */,
 			);
 			path = SecCustomController;
 			sourceTree = "<group>";
@@ -1124,6 +1123,8 @@
 				C80324991BF33DCF00BC432E /* SecCustomImageData.m */,
 				C803249A1BF33DCF00BC432E /* SecCustomImageView.h */,
 				C803249B1BF33DCF00BC432E /* SecCustomImageView.m */,
+				C87ED28E1BF6F3DA008D6258 /* SecCustomHeChangCell.h */,
+				C87ED28F1BF6F3DA008D6258 /* SecCustomHeChangCell.m */,
 			);
 			path = SecCustomView;
 			sourceTree = "<group>";
@@ -1381,6 +1382,8 @@
 			files = (
 				C80324A41BF33DCF00BC432E /* DongTingCusotomCell.m in Sources */,
 				80CF66501BE84CF4005CC073 /* FindViewController.m in Sources */,
+				C8A0C2B11BF57E8200D3EAB6 /* SecKeGgXiuController.m in Sources */,
+				C87ED2901BF6F3DA008D6258 /* SecCustomHeChangCell.m in Sources */,
 				181F15471BE9F4CC00D88B8F /* FithSetData.m in Sources */,
 				B87DBE561BE86002004D9899 /* HomePageCellData.m in Sources */,
 				F886D7091BE8917500BA388A /* TabBarController.m in Sources */,
@@ -1415,11 +1418,14 @@
 				C803249F1BF33DCF00BC432E /* SecCaiViewController.m in Sources */,
 				18D0D54A1BF35B4E0037BB5D /* FithFindFrTableViewCell.m in Sources */,
 				18B6BF7F1BF0C61B00B0D809 /* FithVIPViewController.m in Sources */,
+				C87ED2871BF6EBB7008D6258 /* SecMVController.m in Sources */,
+				C87ED28A1BF6EEA1008D6258 /* SecQuanGuoController.m in Sources */,
 				80CF664D1BE84CE0005CC073 /* ChatViewController.m in Sources */,
 				186EFC9B1BF1781900D3F93B /* FithVipTableViewCell.m in Sources */,
 				18C72BFE1BEA23740017B3A7 /* FithSetTableViewCell.m in Sources */,
 				18C72BFB1BEA1EE50017B3A7 /* FithSetViewController.m in Sources */,
 				C80324A31BF33DCF00BC432E /* CustomPeopleImage.m in Sources */,
+				C87ED28D1BF6F013008D6258 /* SecHeChangController.m in Sources */,
 				B87DBE531BE85F93004D9899 /* HomePageCell.m in Sources */,
 				18B6BF4B1BF08A4300B0D809 /* FithGameViewController.m in Sources */,
 			);
