@@ -13,6 +13,7 @@
 #import "FithMatchViewController.h"
 #import "FithFindViewController.h"
 #import "FithVIPViewController.h"
+#import "AvPlayerViewController.h"
 #import "Engin.h"
 #define game_tag 6000
 #define hot_tag 6001
@@ -60,6 +61,12 @@
     [self initTabView];
     [self initQR];
 }
+-(void)rightBtn:(id)sender{
+    AvPlayerViewController *avplay = [[AvPlayerViewController alloc] init];
+    avplay.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:avplay animated:YES];
+    
+}
 
 -(void)leftBtn:(id)sender
 {
@@ -67,11 +74,6 @@
     
     set.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:set animated:YES];
-}
-
--(void)rightBtn:(id)sender
-{
-     NSLog(@"right");
 }
 
 -(void)getTableViewDataSource{
@@ -98,14 +100,14 @@
     _tableView.showsVerticalScrollIndicator = NO;
     
     //顶上3个图片
-    headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
+    headView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 90)];
     headView.backgroundColor = [UIColor whiteColor];
     _tableView.tableHeaderView = headView;
     
-    view1 = [self ViewWithFrame:CGRectMake(10,10 , (SCREEN_WIDTH-10*4)/3, 60) WithBackCollor:[UIColor colorWithRed:255/255.0f green:100/255.0f blue:100/255.0f alpha:1.0f] Tag:game_tag image:[UIImage imageNamed:@"youxizhongxin.png"] Title:@"游戏中心"];
-    view2 = [self ViewWithFrame:CGRectMake((SCREEN_WIDTH-10*4)/3+10+10, 10, (SCREEN_WIDTH-10*4)/3, 60) WithBackCollor:[UIColor colorWithRed:51/255.0f green:183/255.0f blue:201/255.0f alpha:1.0f] Tag:hot_tag image:[UIImage imageNamed:@"remenbisai.png"] Title:@"热门比赛"];
+    view1 = [self ViewWithFrame:CGRectMake(10,10 , (SCREEN_WIDTH-10*4)/3, 70) WithBackCollor:[UIColor colorWithRed:255/255.0f green:100/255.0f blue:100/255.0f alpha:1.0f] Tag:game_tag image:[UIImage imageNamed:@"youxizhongxin.png"] Title:@"游戏中心"];
+    view2 = [self ViewWithFrame:CGRectMake((SCREEN_WIDTH-10*4)/3+10+10, 10, (SCREEN_WIDTH-10*4)/3, 70) WithBackCollor:[UIColor colorWithRed:51/255.0f green:183/255.0f blue:201/255.0f alpha:1.0f] Tag:hot_tag image:[UIImage imageNamed:@"remenbisai.png"] Title:@"热门比赛"];
     
-    view3 = [self ViewWithFrame:CGRectMake((SCREEN_WIDTH-10*4)*2/3+10+10+10, 10, (SCREEN_WIDTH-10*4)/3, 60) WithBackCollor:[UIColor colorWithRed:137/255.0f green:179/255.0f blue:0/255.0f alpha:1.0f] Tag:findfr_tag image:[UIImage imageNamed:@"zhaopengyou.png"] Title:@"找好友"];
+    view3 = [self ViewWithFrame:CGRectMake((SCREEN_WIDTH-10*4)*2/3+10+10+10, 10, (SCREEN_WIDTH-10*4)/3, 70) WithBackCollor:[UIColor colorWithRed:137/255.0f green:179/255.0f blue:0/255.0f alpha:1.0f] Tag:findfr_tag image:[UIImage imageNamed:@"zhaopengyou.png"] Title:@"找好友"];
     
     _tableView.backgroundColor = [UIColor colorWithRed:237/255.0f green:237/255.0f blue:237/255.0f alpha:1.0];
     [self.view addSubview:_tableView];

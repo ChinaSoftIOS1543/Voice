@@ -118,7 +118,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return ((NSArray *)[_itemsLists objectForKey:[NSString stringWithFormat:@"arr%d",section+1]]).count;
+    return ((NSArray *)[_itemsLists objectForKey:[NSString stringWithFormat:@"arr%ld",(long)section+1]]).count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
