@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
+#import <Foundation/Foundation.h>
+
 
 
 //#define Screen_height SCREEN_HEIGHT
@@ -167,6 +169,28 @@
 -(void)loginBtnCliked:(id)sender{
     NSLog(@"user=%@",userNameField.text);
     NSLog(@"password=%@",passwordField.text);
+    NSString * Str=@"http://192.168.1.132/singpub/login.php";
+    NSString * body=[NSString stringWithFormat:@"username=%@&password=%@",userNameField.text,passwordField.text];
+    
+    NSURL * url =[NSURL URLWithString:[Str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSData * data =[body dataUsingEncoding:NSUTF8StringEncoding];
+    
+    NSMutableURLRequest * req=[[NSMutableURLRequest alloc] initWithURL:url];
+    
+    [req setHTTPBody:data];
+    [req setHTTPMethod:@"POST"];
+    [req setURL:url];
+    [req setTimeoutInterval:10];
+    [req setCachePolicy:NSURLRequestUseProtocolCachePolicy];
+    
+    NSOperationQueue * queue=[[NSOperationQueue alloc] init];
+    [NSURLConnection sendAsynchronousRequest:req queue:queue completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+            NSDictionary * dic=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&connectionError];
+            NSLog(@"%@",response);
+            NSLog(@"%@",dic);
+    
+    }];
+    
 }
 
 #pragma mark-btnClicked

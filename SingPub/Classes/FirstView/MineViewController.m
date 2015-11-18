@@ -73,7 +73,7 @@
 
 -(void)imageClicked:(id)sender{
 
-#if 0
+#if 1
     LoginViewController *loginView = [[LoginViewController alloc] init];
     [self.navigationController pushViewController:loginView animated:YES];
     
