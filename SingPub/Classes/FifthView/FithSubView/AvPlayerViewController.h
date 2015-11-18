@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface AvPlayerViewController : UIViewController
-
++(AvPlayerViewController *) sharedController;
 @end

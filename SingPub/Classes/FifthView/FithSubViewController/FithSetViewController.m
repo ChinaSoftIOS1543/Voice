@@ -21,6 +21,7 @@
     UIView *_rootView;
     UILabel *rootlable;
     UIButton *rootbtn;
+    NSUserDefaults *default1;
 }
 @end
 
@@ -164,7 +165,7 @@
             if (indexPath.row == 2) {
                 chooseLab = [[UILabel alloc] init];
                 chooseLab.frame = CGRectMake(SCREEN_WIDTH-170, (45-30)/2, 140, 30);
-                chooseLab.text = @"仅在Wifi网络下播放";
+                chooseLab.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"buttontitle"];
                 chooseLab.font = [UIFont systemFontOfSize:12];
                 chooseLab.textAlignment = NSTextAlignmentRight;
                 chooseLab.textColor = [UIColor colorWithRed:163/255.0f green:163/255.0f blue:163/255.0f alpha:0.9f];
@@ -280,11 +281,13 @@
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [_tableView reloadData];
+    chooseLab.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"buttontitle"];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [self.view removeFromSuperview ];
+    [[NSUserDefaults standardUserDefaults] setObject:chooseLab.text forKey:@"buttontitle"];
 }
 /*
 #pragma mark - Navigation

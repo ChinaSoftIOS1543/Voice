@@ -62,7 +62,7 @@
     [self initQR];
 }
 -(void)rightBtn:(id)sender{
-    AvPlayerViewController *avplay = [[AvPlayerViewController alloc] init];
+    AvPlayerViewController *avplay = [AvPlayerViewController sharedController];
     avplay.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:avplay animated:YES];
     
