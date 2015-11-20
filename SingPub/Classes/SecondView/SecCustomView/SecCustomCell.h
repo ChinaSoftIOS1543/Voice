@@ -10,4 +10,6 @@
 
 @interface SecCustomCell : UITableViewCell
 
+@property (nonatomic,copy)NSArray * arr;
+
 @end

@@ -7,8 +7,15 @@
 //
 
 #import "SecGeDanController.h"
+#import "EGOImageView.h"
+#import "EGOCache.h"
+
 
 @interface SecGeDanController ()<UITableViewDataSource,UITableViewDelegate>
+{
+    NSArray * imgURLs;
+    EGOImageView *egoImageView;
+}
 
 @end
 
@@ -16,7 +23,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [[EGOCache currentCache] clearCache];
     self.view.backgroundColor=[UIColor whiteColor];
+    imgURLs=[[NSArray alloc] initWithObjects:
+             @"http://jiayahan0223-domain.stor.sinaapp.com/image%2Fc925fc05b3da803ea83ee24fc17c6803.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/image%2F58590f7451b208c57bad43bddbfe4888.jpg.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/image%2F2ad9a0d32837b0c7a98cd9475f3f8364.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/image%2Fc925fc05b3da803ea83ee24fc17c6803.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/image%2Fc925fc05b3da803ea83ee24fc17c6803.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/image%2F2ad9a0d32837b0c7a98cd9475f3f8364.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/image%2F58590f7451b208c57bad43bddbfe4888.jpg.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/image%2Fc925fc05b3da803ea83ee24fc17c6803.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/image%2F2ad9a0d32837b0c7a98cd9475f3f8364.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/image%2Fc925fc05b3da803ea83ee24fc17c6803.png",
+             nil];
     // Do any additional setup after loading the view.
 }
 
@@ -51,8 +71,12 @@
     if (cell==nil) {
         cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellName];
     }
-    UIImageView * image=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
-    image.image=[UIImage imageNamed:@"Default-568h.png"];
+    //[self getImage];
+    
+    egoImageView = [[EGOImageView alloc] initWithPlaceholderImage:[UIImage imageNamed:@"Default-568h.png"]];
+    egoImageView.frame=CGRectMake(0, 0, SCREEN_WIDTH, 80);
+//    UIImageView * image=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 80)];
+//    image.image=[UIImage imageNamed:@"Default-568h.png"];
     UILabel * leftLabel=[[UILabel alloc] initWithFrame:CGRectMake(10, 60, SCREEN_WIDTH/2, 20)];
     leftLabel.text=@"歌单名";
     leftLabel.textAlignment=NSTextAlignmentLeft;
@@ -61,10 +85,17 @@
     rightLabel.text=@"12344";
     rightLabel.textAlignment=NSTextAlignmentRight;
     
-    cell.backgroundView=image;
-    
+    cell.backgroundView=egoImageView;
+    [self setImageWithURL:[imgURLs objectAtIndex:indexPath.row]];
     [cell.contentView addSubview:rightLabel];
     [cell.contentView addSubview:leftLabel];
+    
     return cell;
 }
+-(void)setImageWithURL:(NSString *)imageURL
+{
+    [egoImageView setImageURL:[NSURL URLWithString:imageURL]];
+    
+}
+
 @end

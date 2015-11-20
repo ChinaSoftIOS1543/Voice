@@ -18,4 +18,8 @@
 
 @property (nonatomic,weak)id<CustomPeopleImageDeldgate>delegate;
 
+@property (nonatomic,copy)NSString *imageURl;
+
+-(void)setImageWithURL:(NSString *)imageURL;
+
 @end

@@ -69,8 +69,6 @@
     data4.dataName=@"K歌秀";
     [arr addObject:data4];
     
-
-    
     
     SecCustomImageData * data6=[[SecCustomImageData alloc] init];
     data6.dataImage=@"jingcaihechang.png";

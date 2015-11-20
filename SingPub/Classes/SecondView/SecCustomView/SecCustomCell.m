@@ -8,8 +8,23 @@
 
 #import "SecCustomCell.h"
 #import "CustomPeopleImage.h"
+#import "EGOImageView.h"
+#import "EGOCache.h"
+
+@interface SecCustomCell ()
+{
+    NSArray * imgURLs;
+    EGOImageView *egoImageView;
+
+}
+
+
+
+@end
 
 @implementation SecCustomCell
+
+
 
 - (void)awakeFromNib {
     // Initialization code
@@ -30,16 +45,37 @@
     return self;
 }
 -(void)initUI{
-    CustomPeopleImage * imageView1=[[CustomPeopleImage alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH/3-1, 100)];
-    imageView1.backgroundColor=[UIColor orangeColor];
-    [self.contentView addSubview:imageView1];
     
-    CustomPeopleImage * imageView2=[[CustomPeopleImage alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/3, 0, SCREEN_WIDTH/3-1, 100)];
-    imageView2.backgroundColor=[UIColor orangeColor];
-    [self.contentView  addSubview:imageView2];
+    _arr=[[NSArray alloc] initWithObjects:
+          @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.58.31.png",
+          @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.58.40.png",
+          @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.59.07.png",
+          nil];
+    for (int i=0; i<3; i++) {
+        egoImageView = [[EGOImageView alloc] initWithPlaceholderImage:[UIImage imageNamed:@"Default-568h.png"]];
+        egoImageView.frame=CGRectMake(SCREEN_WIDTH/3*i, 0, SCREEN_WIDTH/3-1, 100);
+        [self setImageWithURL:[_arr objectAtIndex:i]];
+        [self.contentView addSubview:egoImageView];
+        UILabel * lable=[[UILabel alloc] initWithFrame:CGRectMake(0, 70, 60, 15)];
+        lable.text=@"用户id";
+        [egoImageView addSubview:lable];
+        UILabel * lable2=[[UILabel alloc] initWithFrame:CGRectMake(0, 85, 60, 15)];
+        lable2.text=@"歌名";
+        [egoImageView addSubview:lable2];
+    }
     
-    CustomPeopleImage * imageView3=[[CustomPeopleImage alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/3*2,0, SCREEN_WIDTH/3, 100)];
-    imageView3.backgroundColor=[UIColor orangeColor];
-    [self.contentView  addSubview:imageView3];
+
+    
+
+}
+-(void)updateMyCell
+{
+    
+}
+
+-(void)setImageWithURL:(NSString *)imageURL
+{
+    [egoImageView setImageURL:[NSURL URLWithString:imageURL]];
+    
 }
 @end

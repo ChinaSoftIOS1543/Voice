@@ -20,6 +20,8 @@
 #import "SecMVController.h"
 #import "SecQuanGuoController.h"
 #import "SecHeChangController.h"
+#import "EGOImageView.h"
+#import "EGOCache.h"
 
 
 @interface ShowViewController ()<UITableViewDataSource,UITableViewDelegate,SecCustomImageViewDelegate,CustomPeopleImageDeldgate>
@@ -28,6 +30,8 @@
     UIView * _sectionView;
     UIView * _sectionOtherView;
     UIButton * _btn;
+    NSArray * imgURLs;
+    EGOImageView *egoImageView;
 }
 @end
 
@@ -39,6 +43,7 @@
     [self initSectionView];
     [self sectionOtherView];
     [self initLefaButton];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -48,6 +53,7 @@
     [super viewWillAppear:animated];
     [self initUI];
     self.navigationController.navigationBar.hidden=NO;
+    
 }
 -(void)initUI
 {
@@ -104,9 +110,10 @@
 {
     _sectionView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 180)];
     _sectionView.backgroundColor=[UIColor blueColor];
-    UIImageView* imageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 160)];
-    imageView.image=[UIImage imageNamed:@"Default-568h.png"];
-    [_sectionView addSubview:imageView];
+    egoImageView=[[EGOImageView alloc] initWithPlaceholderImage:[UIImage imageNamed:@"Default-568h.png"]];
+    egoImageView.frame=CGRectMake(0, 0, SCREEN_WIDTH, 160);
+    [_sectionView addSubview:egoImageView];
+    [self setImageWithURL:@"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.53.32.png"];
     
     UILabel * userName=[[UILabel alloc] initWithFrame:CGRectMake(0, 110, 200, 20)];
     userName.textAlignment=NSTextAlignmentLeft;
@@ -121,12 +128,25 @@
 
 -(void)sectionOtherView
 {
+    imgURLs=[[NSArray alloc] initWithObjects:
+             @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.53.42.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.53.54.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.54.06.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.54.15.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.54.39.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.54.51.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.55.09.png",
+             @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.55.20.png",
+             nil];
     _sectionOtherView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 480)];
     _sectionOtherView.backgroundColor=[UIColor orangeColor];
+    int count=0;
     for (int i=0; i<4;i++) {
         for (int j=0; j<2; j++) {
             CustomPeopleImage * imageView=[[CustomPeopleImage alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2*j, 120*i, SCREEN_WIDTH/2, 120)];
             imageView.delegate=self;
+            [imageView setImageWithURL:[imgURLs objectAtIndex:count]];
+            count++;
             [_sectionOtherView addSubview:imageView];
         }
     }
@@ -144,10 +164,35 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    NSArray * arr1=[[NSArray alloc] initWithObjects:
+                    @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.58.31.png",
+                    @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.58.40.png",
+                    @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.59.07.png",
+                    nil];
+    NSArray * arr2=[[NSArray alloc] initWithObjects:
+                    @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2014.00.12.png",
+                    @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2014.00.07.png",
+                    @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.53.32.png",
+                    nil];
+    NSArray * arr3=[[NSArray alloc] initWithObjects:
+                    @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.53.42.png",
+                    @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.53.54.png",
+                    @"http://jiayahan0223-domain.stor.sinaapp.com/people%2Fpeople%202015-11-19%2013.54.06.png",
+                    nil];
+    
+    NSDictionary * dic=[[NSDictionary alloc] initWithObjectsAndKeys:
+                        arr1,@"arr1",
+                        arr2,@"arr2",
+                        arr3,@"arr3",
+                        nil];
     static NSString *cellName=@"cellName";
     SecCustomCell * cell=[tableView dequeueReusableCellWithIdentifier:cellName];
     if (cell==nil) {
         cell=[[SecCustomCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellName];
+//        cell.arr=[[NSArray alloc] initWithArray:[dic objectForKey:[NSString stringWithFormat:@"arr%d",indexPath.row+1]]];
+        
+        
     }
     return cell;
 }
@@ -162,7 +207,7 @@
         return 0;
     }else
     {
-    return 10;
+    return 1;
     }
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -241,6 +286,12 @@
             break;
 
     }
+}
+
+-(void)setImageWithURL:(NSString *)imageURL
+{
+    [egoImageView setImageURL:[NSURL URLWithString:imageURL]];
+    
 }
 -(void)CustomPeopleClick:(id)sender
 {

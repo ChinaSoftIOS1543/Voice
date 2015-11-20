@@ -7,6 +7,16 @@
 //
 
 #import "CustomPeopleImage.h"
+#import "EGOImageView.h"
+#import "EGOCache.h"
+
+@interface CustomPeopleImage ()
+{
+    NSArray * imgURLs;
+    EGOImageView *egoImageView;
+}
+
+@end
 
 @implementation CustomPeopleImage
 
@@ -22,38 +32,32 @@
 }
 -(void)initUI:(CGRect)frame
 {
-    UIImageView* imageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0,frame.size.width, frame.size.height)];
-    //
-    imageView.backgroundColor=[UIColor blueColor];
-    imageView.image=[UIImage imageNamed:@"board_hotduet.png"];
-    imageView.userInteractionEnabled=YES;
-    imageView.tag=self.tag;
-    UITapGestureRecognizer * tap=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewClick:)];
-    [imageView addGestureRecognizer:tap];
-    [self addSubview:imageView];
     
-    UILabel * label=[[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(imageView.frame)-40, SCREEN_WIDTH/3 , 20)];
+    egoImageView = [[EGOImageView alloc] initWithPlaceholderImage:[UIImage imageNamed:@"Default-568h.png"]];
+    egoImageView.frame=CGRectMake(0, 0,frame.size.width, frame.size.height);
+        [self addSubview:egoImageView];
+    UILabel * label=[[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(egoImageView.frame)-40, SCREEN_WIDTH/3 , 20)];
     label.textAlignment=NSTextAlignmentLeft;
     label.text=@"用户id";
     label.font=[UIFont systemFontOfSize:12];
     [self addSubview:label];
     
-    UILabel * label2=[[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(imageView.frame)-20, SCREEN_WIDTH/3 , 20)];
+    UILabel * label2=[[UILabel alloc] initWithFrame:CGRectMake(0, CGRectGetMaxY(egoImageView.frame)-20, SCREEN_WIDTH/3 , 20)];
     label2.textAlignment=NSTextAlignmentLeft;
     label2.text=@"歌名";
     label2.font=[UIFont systemFontOfSize:12];
     [self addSubview:label2];
+
 }
 -(void)imageViewClick:(id)sender
 {
     [self.delegate CustomPeopleClick:sender];
 }
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+
+-(void)setImageWithURL:(NSString *)imageURL
+{
+    [egoImageView setImageURL:[NSURL URLWithString:imageURL]];
+    
 }
-*/
 
 @end

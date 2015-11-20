@@ -169,15 +169,15 @@
 -(void)loginBtnCliked:(id)sender{
     NSLog(@"user=%@",userNameField.text);
     NSLog(@"password=%@",passwordField.text);
-    NSString * Str=@"http://192.168.1.132/singpub/login.php";
-    NSString * body=[NSString stringWithFormat:@"username=%@&password=%@",userNameField.text,passwordField.text];
     
+    NSString * Str=@"http://jiayahan0223.sinaapp.com/regis.php";
+    NSString * body=[NSString stringWithFormat:@"newuser=%@&newpass=%@",userNameField.text,passwordField.text];
     NSURL * url =[NSURL URLWithString:[Str stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    NSData * data =[body dataUsingEncoding:NSUTF8StringEncoding];
+    NSData * data1 =[body dataUsingEncoding:NSUTF8StringEncoding];
     
     NSMutableURLRequest * req=[[NSMutableURLRequest alloc] initWithURL:url];
     
-    [req setHTTPBody:data];
+    [req setHTTPBody:data1];
     [req setHTTPMethod:@"POST"];
     [req setURL:url];
     [req setTimeoutInterval:10];
@@ -185,10 +185,15 @@
     
     NSOperationQueue * queue=[[NSOperationQueue alloc] init];
     [NSURLConnection sendAsynchronousRequest:req queue:queue completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
+        if (connectionError==nil) {
             NSDictionary * dic=[NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&connectionError];
             NSLog(@"%@",response);
             NSLog(@"%@",dic);
-    
+        }else
+        {
+            NSLog(@"error");
+        }
+
     }];
     
 }
