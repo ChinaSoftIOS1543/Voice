@@ -297,18 +297,19 @@
 		C80324A61BF33DCF00BC432E /* SecCustomImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = C80324991BF33DCF00BC432E /* SecCustomImageData.m */; };
 		C80324A71BF33DCF00BC432E /* SecCustomImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C803249B1BF33DCF00BC432E /* SecCustomImageView.m */; };
 		C80324A81BF33DCF00BC432E /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C803249D1BF33DCF00BC432E /* ShowViewController.m */; };
-		C85824991BFD76BA003272F0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C85824791BFD76BA003272F0 /* .gitignore */; };
-		C858249A1BFD76BA003272F0 /* .gitmodules in Resources */ = {isa = PBXBuildFile; fileRef = C858247A1BFD76BA003272F0 /* .gitmodules */; };
-		C858249B1BFD76BA003272F0 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C858247D1BFD76BA003272F0 /* EGOCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C858249C1BFD76BA003272F0 /* EGOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C85824801BFD76BA003272F0 /* EGOImageButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C858249D1BFD76BA003272F0 /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C85824831BFD76BA003272F0 /* EGOImageLoadConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C858249E1BFD76BA003272F0 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C85824851BFD76BA003272F0 /* EGOImageLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C858249F1BFD76BA003272F0 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C85824881BFD76BA003272F0 /* EGOImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		C85824A01BFD76BA003272F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C85824891BFD76BA003272F0 /* InfoPlist.strings */; };
-		C85824A51BFD76BA003272F0 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = C85824921BFD76BA003272F0 /* placeholder.png */; };
-		C85824A61BFD76BA003272F0 /* RTEGOImageLoaderTest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85824931BFD76BA003272F0 /* RTEGOImageLoaderTest-Info.plist */; };
 		C87ED2901BF6F3DA008D6258 /* SecCustomHeChangCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C87ED28F1BF6F3DA008D6258 /* SecCustomHeChangCell.m */; };
 		C8A0C2B11BF57E8200D3EAB6 /* SecKeGgXiuController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8A0C2B01BF57E8200D3EAB6 /* SecKeGgXiuController.m */; };
+		C8EE61011BFEC54C00F78C01 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = C8EE60E11BFEC54C00F78C01 /* .gitignore */; };
+		C8EE61021BFEC54C00F78C01 /* .gitmodules in Resources */ = {isa = PBXBuildFile; fileRef = C8EE60E21BFEC54C00F78C01 /* .gitmodules */; };
+		C8EE61031BFEC54C00F78C01 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE60E51BFEC54C00F78C01 /* EGOCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8EE61041BFEC54C00F78C01 /* EGOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE60E81BFEC54C00F78C01 /* EGOImageButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8EE61051BFEC54C00F78C01 /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE60EB1BFEC54C00F78C01 /* EGOImageLoadConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8EE61061BFEC54C00F78C01 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE60ED1BFEC54C00F78C01 /* EGOImageLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8EE61071BFEC54C00F78C01 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C8EE60F01BFEC54C00F78C01 /* EGOImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C8EE61081BFEC54C00F78C01 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8EE60F11BFEC54C00F78C01 /* InfoPlist.strings */; };
+		C8EE610D1BFEC54C00F78C01 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = C8EE60FA1BFEC54C00F78C01 /* placeholder.png */; };
+		C8EE610E1BFEC54C00F78C01 /* RTEGOImageLoaderTest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8EE60FB1BFEC54C00F78C01 /* RTEGOImageLoaderTest-Info.plist */; };
+		C8EE61121BFEC6F300F78C01 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C8EE61111BFEC6F300F78C01 /* Info.plist */; };
 		F886D7081BE8917500BA388A /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D7051BE8917500BA388A /* NavigationController.m */; };
 		F886D7091BE8917500BA388A /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F886D7071BE8917500BA388A /* TabBarController.m */; };
 /* End PBXBuildFile section */
@@ -638,7 +639,6 @@
 		18DDFFFE1BF9665F0059C9FB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		18DDFFFF1BF9665F0059C9FB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		80CF66011BE8480B005CC073 /* SingPub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingPub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		80CF66051BE8480B005CC073 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80CF66061BE8480B005CC073 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		80CF66081BE8480B005CC073 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		80CF66091BE8480B005CC073 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -724,22 +724,6 @@
 		C803249B1BF33DCF00BC432E /* SecCustomImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCustomImageView.m; sourceTree = "<group>"; };
 		C803249C1BF33DCF00BC432E /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
 		C803249D1BF33DCF00BC432E /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
-		C85824791BFD76BA003272F0 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		C858247A1BFD76BA003272F0 /* .gitmodules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
-		C858247C1BFD76BA003272F0 /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
-		C858247D1BFD76BA003272F0 /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
-		C858247F1BFD76BA003272F0 /* EGOImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageButton.h; sourceTree = "<group>"; };
-		C85824801BFD76BA003272F0 /* EGOImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageButton.m; sourceTree = "<group>"; };
-		C85824821BFD76BA003272F0 /* EGOImageLoadConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoadConnection.h; sourceTree = "<group>"; };
-		C85824831BFD76BA003272F0 /* EGOImageLoadConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoadConnection.m; sourceTree = "<group>"; };
-		C85824841BFD76BA003272F0 /* EGOImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoader.h; sourceTree = "<group>"; };
-		C85824851BFD76BA003272F0 /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoader.m; sourceTree = "<group>"; };
-		C85824871BFD76BA003272F0 /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageView.h; sourceTree = "<group>"; };
-		C85824881BFD76BA003272F0 /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
-		C858248A1BFD76BA003272F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C85824921BFD76BA003272F0 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
-		C85824931BFD76BA003272F0 /* RTEGOImageLoaderTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RTEGOImageLoaderTest-Info.plist"; sourceTree = "<group>"; };
-		C85824941BFD76BA003272F0 /* RTEGOImageLoaderTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTEGOImageLoaderTest-Prefix.pch"; sourceTree = "<group>"; };
 		C87ED2851BF6EBB7008D6258 /* SecMVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecMVController.h; sourceTree = "<group>"; };
 		C87ED2861BF6EBB7008D6258 /* SecMVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecMVController.m; sourceTree = "<group>"; };
 		C87ED2881BF6EEA1008D6258 /* SecQuanGuoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecQuanGuoController.h; sourceTree = "<group>"; };
@@ -750,6 +734,23 @@
 		C87ED28F1BF6F3DA008D6258 /* SecCustomHeChangCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecCustomHeChangCell.m; sourceTree = "<group>"; };
 		C8A0C2AF1BF57E8200D3EAB6 /* SecKeGgXiuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecKeGgXiuController.h; sourceTree = "<group>"; };
 		C8A0C2B01BF57E8200D3EAB6 /* SecKeGgXiuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecKeGgXiuController.m; sourceTree = "<group>"; };
+		C8EE60E11BFEC54C00F78C01 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C8EE60E21BFEC54C00F78C01 /* .gitmodules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
+		C8EE60E41BFEC54C00F78C01 /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
+		C8EE60E51BFEC54C00F78C01 /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
+		C8EE60E71BFEC54C00F78C01 /* EGOImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageButton.h; sourceTree = "<group>"; };
+		C8EE60E81BFEC54C00F78C01 /* EGOImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageButton.m; sourceTree = "<group>"; };
+		C8EE60EA1BFEC54C00F78C01 /* EGOImageLoadConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoadConnection.h; sourceTree = "<group>"; };
+		C8EE60EB1BFEC54C00F78C01 /* EGOImageLoadConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoadConnection.m; sourceTree = "<group>"; };
+		C8EE60EC1BFEC54C00F78C01 /* EGOImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoader.h; sourceTree = "<group>"; };
+		C8EE60ED1BFEC54C00F78C01 /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoader.m; sourceTree = "<group>"; };
+		C8EE60EF1BFEC54C00F78C01 /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageView.h; sourceTree = "<group>"; };
+		C8EE60F01BFEC54C00F78C01 /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
+		C8EE60F21BFEC54C00F78C01 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C8EE60FA1BFEC54C00F78C01 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		C8EE60FB1BFEC54C00F78C01 /* RTEGOImageLoaderTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "RTEGOImageLoaderTest-Info.plist"; sourceTree = "<group>"; };
+		C8EE60FC1BFEC54C00F78C01 /* RTEGOImageLoaderTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTEGOImageLoaderTest-Prefix.pch"; sourceTree = "<group>"; };
+		C8EE61111BFEC6F300F78C01 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F886D7041BE8917500BA388A /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
 		F886D7051BE8917500BA388A /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		F886D7061BE8917500BA388A /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
@@ -1429,7 +1430,7 @@
 			isa = PBXGroup;
 			children = (
 				18B6BF0A1BF0296100B0D809 /* QR code-Info.plist */,
-				80CF66051BE8480B005CC073 /* Info.plist */,
+				C8EE61111BFEC6F300F78C01 /* Info.plist */,
 				80CF66061BE8480B005CC073 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -1736,75 +1737,76 @@
 		C85824711BFD7635003272F0 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				C8EE60DA1BFEC54C00F78C01 /* RTEGOImageLoaderTest */,
 				18B6BF181BF02A4300B0D809 /* CoreGraphics.framework */,
 				18B6BF161BF02A3C00B0D809 /* UIKit.framework */,
 				18B6BF121BF02A2800B0D809 /* CoreMedia.framework */,
 				18B6BF0E1BF02A0C00B0D809 /* QuartzCore.framework */,
-				C85824721BFD76BA003272F0 /* RTEGOImageLoaderTest */,
 			);
 			name = Foundation;
 			path = SingPub/Foundation;
 			sourceTree = "<group>";
 		};
-		C85824721BFD76BA003272F0 /* RTEGOImageLoaderTest */ = {
+		C8EE60DA1BFEC54C00F78C01 /* RTEGOImageLoaderTest */ = {
 			isa = PBXGroup;
 			children = (
-				C85824781BFD76BA003272F0 /* EGOImageLoading */,
-				C85824891BFD76BA003272F0 /* InfoPlist.strings */,
-				C85824921BFD76BA003272F0 /* placeholder.png */,
-				C85824931BFD76BA003272F0 /* RTEGOImageLoaderTest-Info.plist */,
-				C85824941BFD76BA003272F0 /* RTEGOImageLoaderTest-Prefix.pch */,
+				C8EE60E01BFEC54C00F78C01 /* EGOImageLoading */,
+				C8EE60F11BFEC54C00F78C01 /* InfoPlist.strings */,
+				C8EE60FA1BFEC54C00F78C01 /* placeholder.png */,
+				C8EE60FB1BFEC54C00F78C01 /* RTEGOImageLoaderTest-Info.plist */,
+				C8EE60FC1BFEC54C00F78C01 /* RTEGOImageLoaderTest-Prefix.pch */,
 			);
-			path = RTEGOImageLoaderTest;
+			name = RTEGOImageLoaderTest;
+			path = ../../../../../../Users/zhongruanmini005/Desktop/RTEGOImageLoaderTest/RTEGOImageLoaderTest;
 			sourceTree = "<group>";
 		};
-		C85824781BFD76BA003272F0 /* EGOImageLoading */ = {
+		C8EE60E01BFEC54C00F78C01 /* EGOImageLoading */ = {
 			isa = PBXGroup;
 			children = (
-				C85824791BFD76BA003272F0 /* .gitignore */,
-				C858247A1BFD76BA003272F0 /* .gitmodules */,
-				C858247B1BFD76BA003272F0 /* EGOCache */,
-				C858247E1BFD76BA003272F0 /* EGOImageButton */,
-				C85824811BFD76BA003272F0 /* EGOImageLoader */,
-				C85824861BFD76BA003272F0 /* EGOImageView */,
+				C8EE60E11BFEC54C00F78C01 /* .gitignore */,
+				C8EE60E21BFEC54C00F78C01 /* .gitmodules */,
+				C8EE60E31BFEC54C00F78C01 /* EGOCache */,
+				C8EE60E61BFEC54C00F78C01 /* EGOImageButton */,
+				C8EE60E91BFEC54C00F78C01 /* EGOImageLoader */,
+				C8EE60EE1BFEC54C00F78C01 /* EGOImageView */,
 			);
 			path = EGOImageLoading;
 			sourceTree = "<group>";
 		};
-		C858247B1BFD76BA003272F0 /* EGOCache */ = {
+		C8EE60E31BFEC54C00F78C01 /* EGOCache */ = {
 			isa = PBXGroup;
 			children = (
-				C858247C1BFD76BA003272F0 /* EGOCache.h */,
-				C858247D1BFD76BA003272F0 /* EGOCache.m */,
+				C8EE60E41BFEC54C00F78C01 /* EGOCache.h */,
+				C8EE60E51BFEC54C00F78C01 /* EGOCache.m */,
 			);
 			path = EGOCache;
 			sourceTree = "<group>";
 		};
-		C858247E1BFD76BA003272F0 /* EGOImageButton */ = {
+		C8EE60E61BFEC54C00F78C01 /* EGOImageButton */ = {
 			isa = PBXGroup;
 			children = (
-				C858247F1BFD76BA003272F0 /* EGOImageButton.h */,
-				C85824801BFD76BA003272F0 /* EGOImageButton.m */,
+				C8EE60E71BFEC54C00F78C01 /* EGOImageButton.h */,
+				C8EE60E81BFEC54C00F78C01 /* EGOImageButton.m */,
 			);
 			path = EGOImageButton;
 			sourceTree = "<group>";
 		};
-		C85824811BFD76BA003272F0 /* EGOImageLoader */ = {
+		C8EE60E91BFEC54C00F78C01 /* EGOImageLoader */ = {
 			isa = PBXGroup;
 			children = (
-				C85824821BFD76BA003272F0 /* EGOImageLoadConnection.h */,
-				C85824831BFD76BA003272F0 /* EGOImageLoadConnection.m */,
-				C85824841BFD76BA003272F0 /* EGOImageLoader.h */,
-				C85824851BFD76BA003272F0 /* EGOImageLoader.m */,
+				C8EE60EA1BFEC54C00F78C01 /* EGOImageLoadConnection.h */,
+				C8EE60EB1BFEC54C00F78C01 /* EGOImageLoadConnection.m */,
+				C8EE60EC1BFEC54C00F78C01 /* EGOImageLoader.h */,
+				C8EE60ED1BFEC54C00F78C01 /* EGOImageLoader.m */,
 			);
 			path = EGOImageLoader;
 			sourceTree = "<group>";
 		};
-		C85824861BFD76BA003272F0 /* EGOImageView */ = {
+		C8EE60EE1BFEC54C00F78C01 /* EGOImageView */ = {
 			isa = PBXGroup;
 			children = (
-				C85824871BFD76BA003272F0 /* EGOImageView.h */,
-				C85824881BFD76BA003272F0 /* EGOImageView.m */,
+				C8EE60EF1BFEC54C00F78C01 /* EGOImageView.h */,
+				C8EE60F01BFEC54C00F78C01 /* EGOImageView.m */,
 			);
 			path = EGOImageView;
 			sourceTree = "<group>";
@@ -1944,6 +1946,7 @@
 				18DD01121BF96AA60059C9FB /* tuijian.png in Resources */,
 				18DD01231BF96AA60059C9FB /* login_pwd_icon_normal.png in Resources */,
 				80CF66641BE8536A005CC073 /* board_live.png in Resources */,
+				C8EE610D1BFEC54C00F78C01 /* placeholder.png in Resources */,
 				18DD01351BF96AA60059C9FB /* wofaqidehechang.png in Resources */,
 				18B6BF6F1BF0BF9100B0D809 /* huiyuanduihuanzhongxin@2x.png in Resources */,
 				189D15E01BFB14E10030CD09 /* laba.png in Resources */,
@@ -1977,20 +1980,20 @@
 				18DD01081BF96AA60059C9FB /* erji.png in Resources */,
 				18B6BF6D1BF0BF9100B0D809 /* gexinghuagerenzhuyebeijing@2x.png in Resources */,
 				18B6BF791BF0BF9100B0D809 /* qunzushangxiantisheng@2x.png in Resources */,
-				C858249A1BFD76BA003272F0 /* .gitmodules in Resources */,
 				18DD00C91BF96A550059C9FB /* TH_Banner6.png in Resources */,
 				18B6BF6A1BF0BF9100B0D809 /* chuangjianhuiyuanqunzu@2x.png in Resources */,
 				181F153E1BE9F17D00D88B8F /* faxian_unselect@2x.png in Resources */,
+				C8EE61081BFEC54C00F78C01 /* InfoPlist.strings in Resources */,
 				18DD00BB1BF96A550059C9FB /* F_IMA_NA4.png in Resources */,
 				181F15401BE9F17D00D88B8F /* jingcaibiaoyan_unselect@2x.png in Resources */,
 				C803247F1BF3330A00BC432E /* youzhiMV@2x.png in Resources */,
 				18DD012B1BF96AA60059C9FB /* mima_select.png in Resources */,
-				C85824A61BFD76BA003272F0 /* RTEGOImageLoaderTest-Info.plist in Resources */,
 				18D04B331BEB5AAC00847BE1 /* arrow1.png in Resources */,
 				18DD00B71BF96A550059C9FB /* F_IMA_NA0.png in Resources */,
 				181F15421BE9F17D00D88B8F /* wodechangba_unselect@2x.png in Resources */,
-				C85824A01BFD76BA003272F0 /* InfoPlist.strings in Resources */,
 				18D04B351BEB5AAC00847BE1 /* changbashangcheng@2x.png in Resources */,
+				C8EE61121BFEC6F300F78C01 /* Info.plist in Resources */,
+				C8EE61011BFEC54C00F78C01 /* .gitignore in Resources */,
 				18DD01051BF96AA60059C9FB /* change_sound_vivo_1.png in Resources */,
 				18D04B3E1BEB6E4000847BE1 /* icon@2x.png in Resources */,
 				80CF66661BE8536E005CC073 /* board_near.png in Resources */,
@@ -2006,6 +2009,7 @@
 				18D04B341BEB5AAC00847BE1 /* arrow@2x.png in Resources */,
 				B87DBE3A1BE85C44004D9899 /* mini_player_frames_white_01.png in Resources */,
 				189D15EB1BFB14E10030CD09 /* stop.png in Resources */,
+				C8EE610E1BFEC54C00F78C01 /* RTEGOImageLoaderTest-Info.plist in Resources */,
 				189F9CD41BEE5CC500560261 /* youxizhongxin@2x.png in Resources */,
 				18C72C001BEA3EC10017B3A7 /* arrow@2x.png in Resources */,
 				181F153B1BE9F17D00D88B8F /* changge_select@2x.png in Resources */,
@@ -2019,7 +2023,6 @@
 				B87DBE381BE85C44004D9899 /* mini_player_frames_11.png in Resources */,
 				B87DBE3E1BE85C44004D9899 /* mini_player_frames_white_05.png in Resources */,
 				18B6BF7C1BF0BF9100B0D809 /* yinjianqinxindebofangtexiao@2x.png in Resources */,
-				C85824A51BFD76BA003272F0 /* placeholder.png in Resources */,
 				B87DBE301BE85C44004D9899 /* mini_player_frames_03.png in Resources */,
 				189D15CB1BFB12DE0030CD09 /* 魔兽世界 - 游戏 原声.mp3 in Resources */,
 				18DD01181BF96AA60059C9FB /* myinfo_follow_chorus.png in Resources */,
@@ -2038,7 +2041,6 @@
 				18B6BF6E1BF0BF9100B0D809 /* hongmingxianshi@2x.png in Resources */,
 				183F2B521BF21D0C0039E5D3 /* img1.jpg in Resources */,
 				80CF66581BE85247005CC073 /* tl_photo_slide_back.png in Resources */,
-				C85824991BFD76BA003272F0 /* .gitignore in Resources */,
 				C803247D1BF3330A00BC432E /* Kgexiu@2x.png in Resources */,
 				B87DBE421BE85C44004D9899 /* mini_player_frames_white_09.png in Resources */,
 				189D15E31BFB14E10030CD09 /* leftan.png in Resources */,
@@ -2047,6 +2049,7 @@
 				18DD01151BF96AA60059C9FB /* my_room_icon.png in Resources */,
 				18B6BF061BF028C900B0D809 /* zbar-back.png in Resources */,
 				18B6BF071BF028C900B0D809 /* zbar-help.html in Resources */,
+				C8EE61021BFEC54C00F78C01 /* .gitmodules in Resources */,
 				18DD00BC1BF96A550059C9FB /* F_IMA_NA5.png in Resources */,
 				18DD012E1BF96AA60059C9FB /* sheikanguowo.png in Resources */,
 				189D15E91BFB14E10030CD09 /* sea.png in Resources */,
@@ -2137,7 +2140,7 @@
 				F886D7081BE8917500BA388A /* NavigationController.m in Sources */,
 				183F2B4A1BF2118E0039E5D3 /* FithBannerView.m in Sources */,
 				18DD007F1BF967200059C9FB /* SearchView.m in Sources */,
-				C858249E1BFD76BA003272F0 /* EGOImageLoader.m in Sources */,
+				C8EE61061BFEC54C00F78C01 /* EGOImageLoader.m in Sources */,
 				80CF66711BE85557005CC073 /* FindData.m in Sources */,
 				18DD00711BF967200059C9FB /* ThirdClassifyTableViewCellData.m in Sources */,
 				80CF666E1BE85530005CC073 /* Engin.m in Sources */,
@@ -2166,10 +2169,10 @@
 				18DD002E1BF9665F0059C9FB /* LoginViewController.m in Sources */,
 				18884D391BF2047A0000AAE4 /* FithGameData.m in Sources */,
 				18884D3C1BF206780000AAE4 /* FithGameTableViewCell.m in Sources */,
-				C858249B1BFD76BA003272F0 /* EGOCache.m in Sources */,
+				C8EE61031BFEC54C00F78C01 /* EGOCache.m in Sources */,
 				18B6BF4E1BF08A7D00B0D809 /* FithMatchViewController.m in Sources */,
 				18DD002B1BF9665F0059C9FB /* SelfInfoCell.m in Sources */,
-				C858249F1BFD76BA003272F0 /* EGOImageView.m in Sources */,
+				C8EE61071BFEC54C00F78C01 /* EGOImageView.m in Sources */,
 				80CF660A1BE8480B005CC073 /* AppDelegate.m in Sources */,
 				80CF666B1BE8548B005CC073 /* FindTableViewCell.m in Sources */,
 				18DD00331BF9665F0059C9FB /* AttentionChorusViewController.m in Sources */,
@@ -2184,7 +2187,7 @@
 				C80324A51BF33DCF00BC432E /* SecCustomCell.m in Sources */,
 				18DD00761BF967200059C9FB /* ClassifyViewController.m in Sources */,
 				189D15771BFAB3130030CD09 /* AvPlayerViewController.m in Sources */,
-				C858249D1BFD76BA003272F0 /* EGOImageLoadConnection.m in Sources */,
+				C8EE61051BFEC54C00F78C01 /* EGOImageLoadConnection.m in Sources */,
 				18DD007A1BF967200059C9FB /* WonderfulViewController.m in Sources */,
 				18DD007C1BF967200059C9FB /* ThirdScrollerView.m in Sources */,
 				18DD00321BF9665F0059C9FB /* HeaderViewData.m in Sources */,
@@ -2193,7 +2196,7 @@
 				18DD002F1BF9665F0059C9FB /* RegisterViewController.m in Sources */,
 				18DD003E1BF9665F0059C9FB /* WhoSeenMeViewController.m in Sources */,
 				18D0D54A1BF35B4E0037BB5D /* FithFindFrTableViewCell.m in Sources */,
-				C858249C1BFD76BA003272F0 /* EGOImageButton.m in Sources */,
+				C8EE61041BFEC54C00F78C01 /* EGOImageButton.m in Sources */,
 				18B6BF7F1BF0C61B00B0D809 /* FithVIPViewController.m in Sources */,
 				18DD00301BF9665F0059C9FB /* MineViewController.m in Sources */,
 				18DD009B1BF968AA0059C9FB /* ChatChooseViewController.m in Sources */,
@@ -2245,10 +2248,10 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
-		C85824891BFD76BA003272F0 /* InfoPlist.strings */ = {
+		C8EE60F11BFEC54C00F78C01 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C858248A1BFD76BA003272F0 /* en */,
+				C8EE60F21BFEC54C00F78C01 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
