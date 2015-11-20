@@ -322,18 +322,23 @@
     NSPredicate *ssidPre = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",ssid];
     
     label1.text =  symbol.data ;
+    //测试
+    NSLog(@"%@",label1.text);
     
     //获取label1的内容
     if ([predicate evaluateWithObject:label1.text]) {
         
-        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:nil
-                                                        message:@"It will use the browser to this URL。"
+        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"二维码内容"
+                                                        message:(@"%@",label1.text)
                                                        delegate:nil
                                               cancelButtonTitle:@"Close"
                                               otherButtonTitles:@"Ok", nil];
         alert.delegate = self;
         alert.tag=1;
-        [alert show];
+        //[alert show];
+        //实现跳转safari
+        NSURL *url = [[NSURL alloc] initWithString:label1.text];
+        [[UIApplication sharedApplication] openURL:url];
         
     }
     else if([ssidPre evaluateWithObject:label1.text]){
@@ -349,8 +354,8 @@
          [arrInfoHead objectAtIndex:1],[arrInfoFoot objectAtIndex:1]];
         
         
-        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:label1.text
-                                                        message:@"The password is copied to the clipboard , it will be redirected to the network settings interface"
+        UIAlertView * alert = [[UIAlertView alloc]initWithTitle:@"二维码内容"
+                                                        message:(@"%@",label1.text)
                                                        delegate:nil
                                               cancelButtonTitle:@"Close"
                                               otherButtonTitles:@"Ok", nil];

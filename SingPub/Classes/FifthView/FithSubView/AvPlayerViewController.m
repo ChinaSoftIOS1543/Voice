@@ -50,6 +50,10 @@ static AvPlayerViewController *avplayerviewcontroller = nil;
 -(void)viewDidLoad
 {
     [super viewDidLoad];
+    //支持后台播放
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    [session setActive:YES error:nil];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     
     [self performSelector:@selector(dataInit)];
     [self performSelector:@selector(viewInit)];
@@ -73,7 +77,7 @@ static AvPlayerViewController *avplayerviewcontroller = nil;
 
 -(void)viewInit
 {
-    self.navigationController.navigationBar.alpha = 0.5f;
+    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
     rootImageView= [[UIImageView alloc] initWithFrame: [UIScreen mainScreen].bounds];
     rootImageView.image= [UIImage imageNamed:@"sea.png"];
     [self.view addSubview:rootImageView];
@@ -84,9 +88,6 @@ static AvPlayerViewController *avplayerviewcontroller = nil;
     [button addTarget:self action:@selector(play:) forControlEvents:UIControlEventTouchUpInside];
     [button setImage:[UIImage imageNamed:@"play.png"] forState:UIControlStateNormal];
     [self.view addSubview:button];
-    
-    
-    
     
     button= [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame=CGRectMake(50, 300, 60, 50);
@@ -155,7 +156,6 @@ static AvPlayerViewController *avplayerviewcontroller = nil;
     processTimer=[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(process) userInfo:nil repeats:YES];
     
     
-    
     [self loadMusic:[_pNames objectAtIndex:0] type:nil];
     
     
@@ -165,8 +165,6 @@ static AvPlayerViewController *avplayerviewcontroller = nil;
     UILongPressGestureRecognizer* leftLongPress= [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(leftLongPress:)];
     [leftButton addGestureRecognizer:leftLongPress];
    
-    
-    
 }
 -(void)processSet:(UISlider*)slider
 {

@@ -206,7 +206,6 @@
         
         scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
     }
-    
 }
 
 /*

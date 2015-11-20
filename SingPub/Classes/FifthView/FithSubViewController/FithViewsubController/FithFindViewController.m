@@ -68,7 +68,7 @@
     view2 = [self viewWithimage:nil title:@"腾讯微博" ind:@"查找腾讯微博好友" tag:3301 frame:CGRectMake(0, CGRectGetMaxY(view1.frame)+0.5, SCREEN_WIDTH, 60)];
     
     UIView *view3 = [[UIView alloc] init];
-    view3 = [self viewWithimage:nil title:@"手机联系人" ind:@"查找手机联系人中的好友" tag:3302 frame:CGRectMake(0, CGRectGetMaxY(view2.frame)+0.5, SCREEN_WIDTH, 60)];
+    view3 = [self viewWithimage:nil title:@"手机联系人" ind:@"查找手机联系人中的好友" tag:3302 frame:CGRectMake(0, CGRectGetMaxY(view2.frame)+0.5, SCREEN_WIDTH, 100)];
     
     
 }
